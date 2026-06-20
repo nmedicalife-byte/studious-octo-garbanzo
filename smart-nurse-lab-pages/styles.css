@@ -1,1 +1,174 @@
+    width: auto;
+  }
+
+  .logo strong {
+    font-size: 16px;
+  }
+
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(25px, 7.1vw, 28px);
+    line-height: 1.34;
+  }
+
+  .hero-card {
+    animation-name: fadeUp;
+    transform: none;
+  }
+
+  .hero-card h2 {
+    font-size: clamp(24px, 6vw, 29px);
+    line-height: 1.32;
+  }
+
+  .article-detail {
+    padding-top: 34px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .article-hero {
+    margin-bottom: 28px;
+  }
+
+  .article-hero h1 {
+    font-size: clamp(25px, 7.2vw, 29px);
+    line-height: 1.38;
+    overflow-wrap: anywhere;
+  }
+
+  .article-hero > p {
+    font-size: 16px;
+  }
+
+  .article-layout {
+    display: block;
+  }
+
+  .article-toc {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .article-content {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .table-wrap,
+  .payslip-scroll {
+    width: 100%;
+    max-width: calc(100vw - 36px);
+  }
+
+  .data-table {
+    min-width: 480px;
+  }
+
+  .compact-table {
+    min-width: 320px;
+  }
+
+  .pref-table {
+    min-width: 560px;
+  }
+
+  .payslip-sample {
+    width: 100%;
+    min-width: 0;
+    padding: 14px;
+  }
+
+  .payslip-head,
+  .payslip-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .payslip-grid-5,
+  .payslip-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .payslip-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .payslip-grid div,
+  .payslip-summary div {
+    min-width: 0;
+  }
+
+  .table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-highlight {
+    padding: 18px;
+  }
+
+  .search-row,
+  .wide-card {
+    grid-template-columns: 1fr;
+  }
+
+  .search-row {
+    display: grid;
+  }
+
+  .search-row button {
+    min-height: 48px;
+  }
+
+  .quick-links,
+  .card-grid,
+  .category-grid,
+  .career-list {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-links {
+    padding-bottom: 0;
+  }
+
+  .quick-links a {
+    min-height: 76px;
+    padding: 16px;
+  }
+
+  .drawer-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .drawer-nav a {
+    min-height: 58px;
+    padding-right: 24px;
+  }
+
+  .drawer-link-en {
+    font-size: 10px;
+  }
+
+  .category-grid a {
+    grid-template-columns: 72px 1fr;
+    align-items: center;
+    justify-items: start;
+    min-height: 96px;
+    text-align: left;
+  }
+
+  .wide-card img {
+    height: auto;
+  }
+}
 
