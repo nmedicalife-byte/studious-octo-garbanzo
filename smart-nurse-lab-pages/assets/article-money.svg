@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">看護師の給与明細で見ておきたい手当と控除</title>
+  <desc id="desc">給与明細、夜勤手当、控除、円マークを整理しているイラスト</desc>
+  <rect width="800" height="450" fill="#fff8eb"/>
+  <rect x="104" y="66" width="410" height="320" rx="22" fill="#fff" stroke="#dbe9e8" stroke-width="4"/>
+  <rect x="148" y="112" width="168" height="28" rx="14" fill="#1aa6a7"/>
+  <path d="M150 176h310M150 220h260M150 264h302M150 308h214" stroke="#dbe9e8" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="592" cy="170" r="72" fill="#fff0cf" stroke="#f2b84b" stroke-width="8"/>
+  <text x="592" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="78" font-weight="700" fill="#6f4e05">¥</text>
+  <rect x="532" y="274" width="162" height="66" rx="18" fill="#eaf6f3" stroke="#1aa6a7" stroke-width="5"/>
+  <path d="M562 306h72M562 326h46" stroke="#1aa6a7" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="662" cy="308" r="14" fill="#ef7f72"/>
+  <path d="M372 174l32 32 58-76" fill="none" stroke="#f2b84b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

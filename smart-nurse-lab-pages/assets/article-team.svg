@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">先輩に相談しづらい時の声かけ</title>
+  <desc id="desc">看護師が先輩に短く相談し、吹き出しで会話しているイラスト</desc>
+  <rect width="800" height="450" fill="#f6fbfa"/>
+  <rect x="86" y="72" width="628" height="306" rx="28" fill="#fff" stroke="#dbe9e8" stroke-width="4"/>
+  <circle cx="246" cy="202" r="48" fill="#f5c7bf"/>
+  <path d="M184 326c16-58 48-88 96-88s80 30 96 88z" fill="#1aa6a7"/>
+  <circle cx="548" cy="198" r="50" fill="#f5c7bf"/>
+  <path d="M482 326c17-62 52-94 104-94 54 0 90 32 108 94z" fill="#ef7f72"/>
+  <path d="M324 110h154c22 0 40 18 40 40v12c0 22-18 40-40 40h-88l-46 38 12-38h-32c-22 0-40-18-40-40v-12c0-22 18-40 40-40z" fill="#eaf6f3" stroke="#cfe2e0" stroke-width="4"/>
+  <path d="M354 148h104M354 174h66" stroke="#1aa6a7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M500 88h88c18 0 32 14 32 32 0 18-14 32-32 32h-38l-28 24 8-24h-30c-18 0-32-14-32-32 0-18 14-32 32-32z" fill="#fff0cf" stroke="#f2b84b" stroke-width="4"/>
+  <path d="M520 120h70" stroke="#6f4e05" stroke-width="9" stroke-linecap="round"/>
+</svg>
