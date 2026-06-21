@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">働きながら勉強を続ける仕組み</title>
+  <desc id="desc">看護師がノート、スマホ、短い時間割を使って勉強しているイラスト</desc>
+  <rect width="800" height="450" fill="#eaf6f3"/>
+  <rect x="90" y="82" width="284" height="286" rx="22" fill="#fff" stroke="#cfe2e0" stroke-width="4"/>
+  <rect x="420" y="112" width="210" height="260" rx="24" fill="#233238"/>
+  <rect x="438" y="138" width="174" height="196" rx="12" fill="#fff"/>
+  <circle cx="524" cy="352" r="8" fill="#dbe9e8"/>
+  <path d="M144 152h172M144 198h118M144 244h148M144 290h96" stroke="#dbe9e8" stroke-width="15" stroke-linecap="round"/>
+  <path d="M270 102l62 54-116 132-70 16 16-70z" fill="#f2b84b"/>
+  <path d="M270 102l62 54" stroke="#233238" stroke-width="7" stroke-linecap="round"/>
+  <rect x="472" y="176" width="106" height="24" rx="12" fill="#1aa6a7"/>
+  <rect x="472" y="224" width="74" height="14" rx="7" fill="#dbe9e8"/>
+  <rect x="472" y="260" width="98" height="14" rx="7" fill="#dbe9e8"/>
+  <circle cx="652" cy="134" r="38" fill="#fff0cf" stroke="#f2b84b" stroke-width="6"/>
+  <path d="M652 112v24l18 12" stroke="#6f4e05" stroke-width="6" stroke-linecap="round"/>
+</svg>

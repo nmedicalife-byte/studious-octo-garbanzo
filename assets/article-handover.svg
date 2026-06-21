@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">申し送りメモを整理する看護師</title>
+  <desc id="desc">新人看護師が申し送りの順番をメモと吹き出しで整理しているイラスト</desc>
+  <rect width="800" height="450" fill="#f7fbfb"/>
+  <rect x="78" y="64" width="644" height="322" rx="28" fill="#fff" stroke="#dbe9e8" stroke-width="4"/>
+  <circle cx="204" cy="184" r="50" fill="#f5c7bf"/>
+  <path d="M146 328c14-62 46-94 96-94 52 0 84 32 100 94z" fill="#1aa6a7"/>
+  <rect x="168" y="92" width="94" height="48" rx="20" fill="#fff"/>
+  <path d="M215 102v28M201 116h28" stroke="#ef7f72" stroke-width="7" stroke-linecap="round"/>
+  <rect x="374" y="94" width="246" height="238" rx="18" fill="#fff8eb" stroke="#f2b84b" stroke-width="4"/>
+  <rect x="414" y="72" width="166" height="48" rx="16" fill="#1aa6a7"/>
+  <circle cx="454" cy="156" r="12" fill="#f2b84b"/>
+  <circle cx="454" cy="210" r="12" fill="#1aa6a7"/>
+  <circle cx="454" cy="264" r="12" fill="#ef7f72"/>
+  <path d="M482 156h92M482 210h126M482 264h104" stroke="#cfe2e0" stroke-width="15" stroke-linecap="round"/>
+  <path d="M318 128h-74c-18 0-32 14-32 32v12c0 18 14 32 32 32h38l34 28-8-28h10c18 0 32-14 32-32v-12c0-18-14-32-32-32z" fill="#eaf6f3" stroke="#cfe2e0" stroke-width="4"/>
+  <path d="M252 160h54M252 182h34" stroke="#1aa6a7" stroke-width="9" stroke-linecap="round"/>
+</svg>
