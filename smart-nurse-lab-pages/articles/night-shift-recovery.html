@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="夜勤明けの疲れを翌日に残しにくくするために、睡眠、食事、予定の入れ方を無理なく整える入門ガイドです。"
+      content="夜勤前・夜勤明けの過ごし方を、睡眠・食事・予定の組み方から整理。夜勤明けは休みではなく、夜勤入りは準備日にする考え方を解説します。"
     />
-    <title>夜勤明けの疲れを残さない過ごし方 | Smart Nurse Lab</title>
+    <title>夜勤前・夜勤明けの過ごし方の最適解 | Smart Nurse Lab</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
@@ -21,19 +21,14 @@
           <span class="logo-dot logo-dot-a"></span>
           <span class="logo-dot logo-dot-b"></span>
         </span>
-        <span>
-          <strong>Smart Nurse Lab</strong>
-        </span>
+        <span><strong>Smart Nurse Lab</strong></span>
       </a>
       <div class="header-actions">
         <button class="header-search" type="button" aria-expanded="false" aria-controls="headerSearchPanel" aria-label="検索パネルを開く">
           <span class="search-icon" aria-hidden="true"></span>
         </button>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く">
-          <span class="menu-icon" aria-hidden="true">
-            <span></span>
-            <span></span>
-          </span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
           <span class="menu-text">MENU</span>
         </button>
       </div>
@@ -42,14 +37,14 @@
     <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
       <label for="headerArticleSearch">記事を検索</label>
       <div class="search-row">
-        <input id="headerArticleSearch" type="search" placeholder="例: 夜勤、転職、新人、勉強" data-search-input />
+        <input id="headerArticleSearch" type="search" placeholder="例: 夜勤、睡眠、食事、休み方" data-search-input />
         <button type="submit">検索</button>
       </div>
       <div class="keywords" aria-label="人気キーワード">
         <button type="button" data-keyword="夜勤">夜勤</button>
-        <button type="button" data-keyword="新人">新人</button>
-        <button type="button" data-keyword="転職">転職</button>
-        <button type="button" data-keyword="勉強">勉強</button>
+        <button type="button" data-keyword="睡眠">睡眠</button>
+        <button type="button" data-keyword="食事">食事</button>
+        <button type="button" data-keyword="休み方">休み方</button>
       </div>
     </form>
 
@@ -59,30 +54,12 @@
         <strong>記事カテゴリ</strong>
       </div>
       <nav class="drawer-nav" aria-label="カテゴリメニュー">
-        <a href="../index.html#career">
-          <span class="drawer-link-ja">働き方</span>
-          <span class="drawer-link-en">work style</span>
-        </a>
-        <a href="../index.html#categories">
-          <span class="drawer-link-ja">資格・学習</span>
-          <span class="drawer-link-en">study</span>
-        </a>
-        <a href="../index.html#latest">
-          <span class="drawer-link-ja">給与</span>
-          <span class="drawer-link-en">salary</span>
-        </a>
-        <a href="../index.html#must-read">
-          <span class="drawer-link-ja">健康</span>
-          <span class="drawer-link-en">health</span>
-        </a>
-        <a href="../index.html#categories">
-          <span class="drawer-link-ja">ライフスタイル</span>
-          <span class="drawer-link-en">lifestyle</span>
-        </a>
-        <a href="../index.html#latest">
-          <span class="drawer-link-ja">転職サービス</span>
-          <span class="drawer-link-en">career services</span>
-        </a>
+        <a aria-disabled="true"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">資格・学習</span><span class="drawer-link-en">study</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">健康</span><span class="drawer-link-en">health</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">転職サービス</span><span class="drawer-link-en">career services</span></a>
       </nav>
     </aside>
 
@@ -91,94 +68,139 @@
         <header class="article-hero">
           <a class="back-link" href="../index.html">Smart Nurse Lab</a>
           <div class="article-meta">
-            <span class="tag">夜勤</span>
-            <time datetime="2026-06-19">2026.6.19</time>
+            <span class="tag">生活・健康</span>
+            <time datetime="2026-06-21">2026.6.21</time>
           </div>
-          <h1>夜勤明けの疲れを残さない過ごし方</h1>
-          <p>
-            睡眠、食事、予定の入れ方を、無理なく続く形で整える入門ガイド。
-          </p>
-          <img src="../assets/photo-hero-night.jpg" alt="夜勤明けの休み方を整える看護師" />
+          <h1>夜勤前・夜勤明けの過ごし方の最適解</h1>
+          <p>睡眠・食事・予定の組み方</p>
+          <img src="../assets/photo-hero-night.jpg" alt="夜勤前後の過ごし方を整える看護師" />
         </header>
 
         <div class="article-layout">
           <nav class="article-toc" aria-label="記事の目次">
             <strong>目次</strong>
-            <a href="#sleep">1. まず睡眠を守る</a>
-            <a href="#meal">2. 食事は軽く整える</a>
-            <a href="#schedule">3. 予定を詰め込みすぎない</a>
-            <a href="#routine">4. 自分用の型を作る</a>
+            <a href="#message">1. 夜勤前後を休み扱いしない</a>
+            <a href="#real">2. 夜勤がしんどい理由</a>
+            <a href="#before">3. 夜勤入りの日の整え方</a>
+            <a href="#after">4. 夜勤明けの過ごし方</a>
+            <a href="#money">5. 夜勤代と回復コスト</a>
           </nav>
 
           <div class="article-content">
             <p>
-              夜勤明けは、体も頭も思っている以上に消耗しています。帰宅した瞬間は「まだ動ける」と感じても、夕方になって急にだるさが出たり、休んだはずなのに翌日まで疲れが残ったりすることもあります。
+              夜勤前に買い物へ行って、少し昼寝して、そのまま出勤。夜勤明けは「明け休みだから」と予定を入れて、外食して、夜まで起きてしまう。看護師なら、一度くらい心当たりがあるかもしれません。
             </p>
             <p>
-              大切なのは、夜勤明けを気合いで乗り切ることではありません。睡眠、食事、予定の入れ方を少しだけ整えて、回復しやすい流れを作ることです。
+              長年夜勤をしてきた看護師の体験談を聞くと、夜勤のつらさは「眠い」だけではありませんでした。16時間勤務、取れない仮眠、少人数の責任、深夜の食事、明けの散財。体力だけでなく、判断力も生活リズムも削られていきます。
             </p>
 
-            <section id="sleep">
-              <h2>まず睡眠を守る</h2>
+            <section id="message">
+              <h2>夜勤前後を休み扱いしない</h2>
               <p>
-                夜勤明けの過ごし方で一番優先したいのは、まとまった休息を確保することです。帰宅後はスマホや家事を始める前に、できるだけ眠る準備へ入ります。
+                Smart Nurse Labとして一番伝えたいのは、ここです。<strong>夜勤明けは休みではありません。夜勤入りの日も、ただの自由時間ではありません。</strong>
               </p>
-              <ul>
-                <li>帰宅中は強い光を浴びすぎない</li>
-                <li>寝室は暗く、静かに、涼しめに整える</li>
-                <li>眠る前のスマホ時間を短くする</li>
-                <li>宅配や予定は、できれば別日にずらす</li>
-              </ul>
-              <p>
-                眠れない日があっても、自分を責めなくて大丈夫です。目を閉じて横になるだけでも、体を休める時間になります。
-              </p>
-            </section>
-
-            <section id="meal">
-              <h2>食事は「しっかり」より「軽く整える」</h2>
-              <p>
-                夜勤明けは空腹感が強くなりやすい一方で、胃腸は疲れていることがあります。帰宅後すぐに重い食事をとるより、消化しやすいものを軽く食べてから休むほうが楽な場合もあります。
-              </p>
-              <div class="article-note">
-                <strong>例</strong>
-                <p>おにぎり、味噌汁、ヨーグルト、バナナ、スープ、卵料理など。自分の胃に負担が少ないものを選びます。</p>
+              <div class="night-rule-grid" aria-label="夜勤前後の考え方">
+                <div>
+                  <span>Before</span>
+                  <strong>夜勤入りは準備日</strong>
+                  <p>体力を使う予定を詰め込まず、睡眠・食事を整える日。</p>
+                </div>
+                <div>
+                  <span>After</span>
+                  <strong>夜勤明けは回復日</strong>
+                  <p>遊ぶ日ではなく、判断力と体内リズムを戻すための日。</p>
+                </div>
               </div>
               <p>
-                カフェインは眠りに影響することがあるため、夜勤後半から帰宅後にかけては量とタイミングを見直してみましょう。
+                「最適解」といっても、全員に同じ正解があるわけではありません。ただ、夜勤前後を予定で埋めるほど、回復する時間は削られます。まずはこの前提を変えるだけでも、夜勤のダメージは少し減らせます。
               </p>
             </section>
 
-            <section id="schedule">
-              <h2>予定を詰め込みすぎない</h2>
+            <section id="real">
+              <h2>夜勤がしんどい理由</h2>
               <p>
-                夜勤明けに美容院、買い物、役所、友人との予定をまとめて入れると、休んだ感覚がないまま次の勤務を迎えやすくなります。
+                夜勤は、夜に働くことそのものに加えて、長時間勤務、仮眠不足、生活リズムの乱れが重なります。NIOSHの看護師向けトレーニングでも、交代勤務や長時間勤務は睡眠、疲労、注意力、健康行動に影響するテーマとして扱われています。
               </p>
+              <div class="night-burden-list">
+                <p><strong>睡眠</strong><span>量だけでなく、日中睡眠の質が落ちやすい。</span></p>
+                <p><strong>ストレス</strong><span>少人数で多くの患者さんをみる責任がある。</span></p>
+                <p><strong>体内リズム</strong><span>本来眠る時間に働き、明るい時間に眠ることになる。</span></p>
+                <p><strong>慢性疲労</strong><span>頭脳労働と身体介助が長時間続く。</span></p>
+                <p><strong>食事</strong><span>おにぎり、菓子、カフェイン、明けのドカ食いに寄りやすい。</span></p>
+              </div>
               <p>
-                どうしても予定を入れるなら、「短時間で終わるものをひとつだけ」に絞るのがおすすめです。夜勤明けは通常の休日ではなく、回復のための日として扱うと、体の負担を減らしやすくなります。
+                17時に出勤して翌9時に退勤する2交代制の場合、準備や残業を含めると、病院にいる時間がかなり長くなることもあります。月に何回も続けば、「若いから大丈夫」だけでは済まなくなります。
               </p>
             </section>
 
-            <section id="routine">
-              <h2>自分用の夜勤明けルーティンを作る</h2>
+            <section id="before">
+              <h2>夜勤入りの日の整え方</h2>
               <p>
-                毎回ゼロから考えると、それだけで疲れてしまいます。夜勤明けは、できるだけ判断を減らすことがポイントです。
+                夜勤入りの日は、出勤までの時間をうまく使えるように見えます。でも、そこで予定を詰め込みすぎると、夜勤が始まる前から体力を使い切ってしまいます。
               </p>
-              <ol>
-                <li>帰宅したらシャワーを浴びる</li>
-                <li>軽く食べる</li>
-                <li>部屋を暗くする</li>
-                <li>アラームをかけて眠る</li>
-                <li>起きたら水分をとって、軽く体を動かす</li>
-              </ol>
+              <div class="night-plan">
+                <div>
+                  <span>Sleep</span>
+                  <h3>出勤前に横になる時間を確保する</h3>
+                  <p>眠れなくても、暗めの部屋で横になるだけで判断を減らせます。スマホで時間を溶かすより、体を休ませることを優先します。</p>
+                </div>
+                <div>
+                  <span>Meal</span>
+                  <h3>夜勤中に崩れない食事を用意する</h3>
+                  <p>おにぎりだけ、菓子だけ、エナジードリンクだけに寄せない。たんぱく質、汁物、消化しやすいものを少し入れておきます。</p>
+                </div>
+                <div>
+                  <span>Schedule</span>
+                  <h3>予定はひとつまでにする</h3>
+                  <p>買い物、役所、美容院、友人との予定を全部入れると、夜勤前から疲れます。夜勤入りは「準備日」と割り切ります。</p>
+                </div>
+              </div>
+              <div class="article-note">
+                <strong>カフェインは「使いどころ」を決める</strong>
+                <p>カフェインは集中力を支えてくれる一方で、遅い時間に取りすぎると勤務後の睡眠を邪魔することがあります。毎回だらだら飲むより、勤務開始前や本当に眠気が強い場面など、使いどころを決めるのがおすすめです。</p>
+              </div>
+            </section>
+
+            <section id="after">
+              <h2>夜勤明けの過ごし方</h2>
               <p>
-                きれいなルーティンでなくて大丈夫です。「これならできる」と思える形にすることが、続けるための一番のコツです。
+                夜勤明けは、テンションが少し変になります。眠いのに妙に動ける気がしたり、判断力が鈍っているのに買い物や外食に流れたりします。
+              </p>
+              <div class="night-after-flow">
+                <div><span>1</span><strong>帰る</strong><p>寄り道を増やさず、まず帰宅する。</p></div>
+                <div><span>2</span><strong>軽く食べる</strong><p>胃に重すぎないものを選ぶ。</p></div>
+                <div><span>3</span><strong>暗くする</strong><p>スマホ、明るい照明、通知を減らす。</p></div>
+                <div><span>4</span><strong>眠る</strong><p>家事や予定より、回復を先に置く。</p></div>
+              </div>
+              <p>
+                夜勤明けに旅行、飲み会、ショッピングを入れると「時間をうまく使えている」ように感じることがあります。でも、明けの体は普通の休日の体ではありません。まず回復してから動くほうが、長く働くうえでは得です。
+              </p>
+            </section>
+
+            <section id="money">
+              <h2>夜勤代と回復コスト</h2>
+              <p>
+                夜勤は手当がつくので、収入面では大きなメリットがあります。ただし、夜勤明けの外食、マッサージ、ドカ食い、衝動買い、通院、睡眠不足によるパフォーマンス低下まで含めると、本当に得しているかは一度見直してもいいかもしれません。
+              </p>
+              <div class="article-note">
+                <strong>一度、時給換算してみる</strong>
+                <p>夜勤手当だけを見るのではなく、準備時間、残業、明けの回復時間、体調を崩した時のコストまで含めて考えると、自分にとっての夜勤の価値が見えやすくなります。</p>
+              </div>
+              <p>
+                夜勤を辞めることが正解とは限りません。夜勤のほうが合う人もいますし、生活のために夜勤手当が必要な時期もあります。だからこそ、辞めるか続けるかの前に、夜勤で削られた体と生活をどう守るかを考えておきたいところです。
               </p>
             </section>
 
             <section>
               <h2>まとめ</h2>
               <p>
-                夜勤明けの疲れを残さないためには、特別なことを増やすより、回復を邪魔するものを減らすことが大切です。睡眠を優先し、食事を軽く整え、予定を詰め込みすぎない。まずはこの3つから始めてみてください。
+                夜勤前・夜勤明けの過ごし方の最適解は、特別な健康法を増やすことではありません。夜勤入りを準備日にする。夜勤明けを回復日にする。睡眠、食事、予定をその前提で組み直すことです。
+              </p>
+              <p>
+                夜勤を続けるなら、気合いではなく仕組みで体を守りましょう。患者さんのケアを続けるためにも、まず自分の体を使い捨てにしないことが大切です。
+              </p>
+              <p class="source-note">
+                参考: <a href="https://www.cdc.gov/niosh/work-hour-training-for-nurses/default.html">NIOSH Training for Nurses on Shift Work and Long Work Hours</a>、夜勤経験者の体験談、交代勤務・睡眠・カフェイン・食事に関する公開情報をもとにSmart Nurse Labで構成・整理しました。
               </p>
               <p class="article-disclaimer">
                 この記事は一般的な生活情報として作成しています。強い不眠、体調不良、気分の落ち込みが続く場合は、無理をせず医療機関や職場の相談窓口に相談してください。

@@ -60,27 +60,27 @@
         <strong>記事カテゴリ</strong>
       </div>
       <nav class="drawer-nav" aria-label="カテゴリメニュー">
-        <a href="#career">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">働き方</span>
           <span class="drawer-link-en">work style</span>
         </a>
-        <a href="#categories">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">資格・学習</span>
           <span class="drawer-link-en">study</span>
         </a>
-        <a href="#latest">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">給与</span>
           <span class="drawer-link-en">salary</span>
         </a>
-        <a href="#must-read">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">健康</span>
           <span class="drawer-link-en">health</span>
         </a>
-        <a href="#categories">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">ライフスタイル</span>
           <span class="drawer-link-en">lifestyle</span>
         </a>
-        <a href="#latest">
+        <a aria-disabled="true">
           <span class="drawer-link-ja">転職サービス</span>
           <span class="drawer-link-en">career services</span>
         </a>
@@ -108,19 +108,19 @@
       </section>
 
       <section class="quick-links" aria-label="注目テーマ">
-        <a href="#categories">
+        <a aria-disabled="true">
           <span class="quick-icon quick-icon-book" aria-hidden="true"></span>
           <span class="quick-copy"><span>Study</span><strong>勉強・資格</strong></span>
         </a>
-        <a href="#career">
+        <a aria-disabled="true">
           <span class="quick-icon quick-icon-work" aria-hidden="true"></span>
           <span class="quick-copy"><span>Work style</span><strong>働き方</strong></span>
         </a>
-        <a href="#latest">
+        <a aria-disabled="true">
           <span class="quick-icon quick-icon-career" aria-hidden="true"></span>
           <span class="quick-copy"><span>Career</span><strong>転職・キャリア</strong></span>
         </a>
-        <a href="#must-read">
+        <a aria-disabled="true">
           <span class="quick-icon quick-icon-life" aria-hidden="true"></span>
           <span class="quick-copy"><span>Life style</span><strong>生活・健康</strong></span>
         </a>
@@ -132,33 +132,33 @@
           <h2>はじめに読みたい記事</h2>
         </div>
         <div class="card-grid article-grid">
-          <article class="article-card" data-title="新人 看護師 申し送り 苦手 テンプレート" data-category="新人">
-            <img src="./assets/photo-handover.jpg" alt="申し送りメモを整理する新人看護師" />
-            <div class="article-body">
-              <span class="tag">新人</span>
-              <h3>申し送りが苦手な新人看護師へ。伝わる順番とメモの作り方</h3>
-              <p>焦る場面でも要点を落としにくい、観察・変化・対応の整理法。</p>
-              <time datetime="2026-06-10">2026.6.10</time>
-            </div>
-          </article>
-          <article class="article-card" data-title="夜勤 明け 睡眠 疲れ 休み方" data-category="夜勤">
-            <img src="./assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
-            <div class="article-body">
-              <span class="tag">夜勤</span>
-              <h3>夜勤明けに眠れない日の整え方</h3>
-              <p>帰宅後の光、カフェイン、食事、仮眠の考え方をやさしく整理。</p>
-              <time datetime="2026-06-08">2026.6.8</time>
-            </div>
-          </article>
-          <article class="article-card" data-title="看護師 転職 病院 クリニック 比較" data-category="転職">
-            <img src="./assets/photo-career.jpg" alt="病院、クリニック、訪問看護の働き方比較" />
+          <a class="article-card" href="./articles/nurse-career-places.html" data-title="看護師 資格 働ける場所 病院以外 転職 キャリア" data-category="転職">
+            <img src="./assets/photo-career.jpg" alt="看護師資格で選べる職場を考えるイメージ" />
             <div class="article-body">
               <span class="tag">転職</span>
-              <h3>病院・クリニック・訪問看護、働き方の違いを比較</h3>
-              <p>給与だけでなく、生活リズム、学びやすさ、人間関係の見方まで。</p>
-              <time datetime="2026-06-04">2026.6.4</time>
+              <h3>看護師資格で働ける場所はいくつある？</h3>
+              <p>病院以外の選択肢とキャリアの広げ方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
             </div>
-          </article>
+          </a>
+          <a class="article-card" href="./articles/night-shift-recovery.html" data-title="夜勤前 夜勤明け 過ごし方 睡眠 食事 予定 休み方" data-category="生活・健康">
+            <img src="./assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
+            <div class="article-body">
+              <span class="tag">生活・健康</span>
+              <h3>夜勤前・夜勤明けの過ごし方の最適解</h3>
+              <p>睡眠・食事・予定の組み方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+          <a class="article-card" href="./articles/nurse-mental-limit.html" data-title="看護師 辞めたい 限界 メンタル 心 守る 人間関係" data-category="メンタル">
+            <img src="./assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
+            <div class="article-body">
+              <span class="tag">メンタル</span>
+              <h3>看護師を辞めたいと思ったら</h3>
+              <p>限界サインと心を守るための考え方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -168,28 +168,28 @@
           <h2>新着記事</h2>
         </div>
         <div class="featured-list">
-          <article class="wide-card" data-title="勉強 国家試験 復習 ノート" data-category="勉強">
-              <img src="./assets/photo-study.jpg" alt="働きながら勉強を続ける看護師" />
+          <a class="wide-card" href="./articles/nurse-career-places.html" data-title="看護師 資格 働ける場所 病院以外 転職 キャリア" data-category="転職">
+              <img src="./assets/photo-career.jpg" alt="看護師資格で選べる職場を考えるイメージ" />
             <div>
-              <span class="tag">勉強</span>
-              <h3>働きながら勉強を続けるための小さな仕組み</h3>
-              <p>1日10分から続けられる、振り返りノートとスキマ時間の使い方。</p>
+              <span class="tag">転職</span>
+              <h3>看護師資格で働ける場所はいくつある？</h3>
+              <p>病院以外の選択肢とキャリアの広げ方</p>
             </div>
-          </article>
-          <article class="wide-card" data-title="人間関係 プリセプター 先輩 相談" data-category="病棟">
-              <img src="./assets/photo-team.jpg" alt="先輩に相談する看護師" />
+          </a>
+          <a class="wide-card" href="./articles/night-shift-recovery.html" data-title="夜勤前 夜勤明け 過ごし方 睡眠 食事 予定 休み方" data-category="生活・健康">
+              <img src="./assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
             <div>
-              <span class="tag">病棟</span>
-              <h3>先輩に相談しづらい時の、声かけフレーズ集</h3>
-              <p>忙しい現場でも聞きたいことを短く伝えるための言い換え例。</p>
+              <span class="tag">生活・健康</span>
+              <h3>夜勤前・夜勤明けの過ごし方の最適解</h3>
+              <p>睡眠・食事・予定の組み方</p>
             </div>
-          </article>
-          <a class="wide-card" href="./articles/nurse-salary-guide.html" data-title="給料 給与 年収 手当 夜勤 看護師 家計 明細" data-category="給与">
-              <img src="./assets/photo-money.jpg" alt="給与明細の手当と控除を確認するイメージ" />
+          </a>
+          <a class="wide-card" href="./articles/nurse-mental-limit.html" data-title="看護師 辞めたい 限界 メンタル 心 守る 人間関係" data-category="メンタル">
+              <img src="./assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
             <div>
-              <span class="tag">給与</span>
-              <h3>看護師の平均年収はいくら？給与の決まり方と上げ方</h3>
-              <p>給与明細から自分の収入を見直す入門ガイド。</p>
+              <span class="tag">メンタル</span>
+              <h3>看護師を辞めたいと思ったら</h3>
+              <p>限界サインと心を守るための考え方</p>
             </div>
           </a>
         </div>
@@ -201,14 +201,13 @@
           <h2>何から探す？</h2>
         </div>
         <div class="category-grid">
-          <a href="#"><img src="./assets/icon-new.svg" alt="" /><span>新人看護師</span></a>
-          <a href="#"><img src="./assets/icon-night.svg" alt="" /><span>夜勤</span></a>
-          <a href="#"><img src="./assets/icon-study.svg" alt="" /><span>勉強・資格</span></a>
-          <a href="#"><img src="./assets/icon-career.svg" alt="" /><span>転職</span></a>
-          <a href="#"><img src="./assets/icon-ward.svg" alt="" /><span>病棟の悩み</span></a>
-          <a href="#"><img src="./assets/icon-money.svg" alt="" /><span>お金</span></a>
-          <a href="#"><img src="./assets/icon-life.svg" alt="" /><span>暮らし</span></a>
-          <a href="#"><img src="./assets/icon-tools.svg" alt="" /><span>便利ツール</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-beginner.svg" alt="" /><span>新人看護師</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-mental.svg" alt="" /><span>メンタル</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-study.svg" alt="" /><span>勉強・資格</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-career.svg" alt="" /><span>転職</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-money.svg" alt="" /><span>お金</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-life.svg" alt="" /><span>暮らし</span></a>
+          <a aria-disabled="true"><img src="./assets/icon-tools.svg" alt="" /><span>便利ツール</span></a>
         </div>
       </section>
 
@@ -218,14 +217,14 @@
           <h2>働き方から探す</h2>
         </div>
         <div class="career-list">
-          <a href="#">病院</a>
-          <a href="#">クリニック</a>
-          <a href="#">訪問看護</a>
-          <a href="#">美容看護</a>
-          <a href="#">派遣・単発</a>
-          <a href="#">企業・保健師</a>
-          <a href="#">子育て・ブランク</a>
-          <a href="#">その他の働き方</a>
+          <a aria-disabled="true">病院</a>
+          <a aria-disabled="true">クリニック</a>
+          <a aria-disabled="true">訪問看護</a>
+          <a aria-disabled="true">美容看護</a>
+          <a aria-disabled="true">派遣・単発</a>
+          <a aria-disabled="true">企業・保健師</a>
+          <a aria-disabled="true">子育て・ブランク</a>
+          <a aria-disabled="true">その他の働き方</a>
         </div>
       </section>
     </main>

@@ -36,18 +36,13 @@ function setHeaderSearch(open) {
 }
 
 function filterArticles(term) {
-  const query = term.trim().toLowerCase();
-
   searchableCards.forEach((card) => {
-    const text = `${card.dataset.title} ${card.dataset.category}`.toLowerCase();
-    const isMatch = query.length === 0 || text.includes(query);
-
-    card.hidden = !isMatch;
-    card.classList.toggle("is-search-hit", query.length > 0 && isMatch);
+    card.hidden = false;
+    card.classList.remove("is-search-hit");
   });
 
   keywordButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.keyword.toLowerCase() === query);
+    button.classList.remove("is-active");
   });
 }
 
@@ -69,6 +64,23 @@ function updateScrollEffects() {
 
 menuButton.addEventListener("click", () => {
   setDrawer(!drawer.classList.contains("is-open"));
+});
+
+document.addEventListener("click", (event) => {
+  const isDrawerOpen = drawer.classList.contains("is-open");
+  const isMenuClick = menuButton.contains(event.target);
+  const isDrawerClick = drawer.contains(event.target);
+  const isSearchOpen = headerSearchPanel.classList.contains("is-open");
+  const isSearchClick = headerSearch.contains(event.target);
+  const isSearchPanelClick = headerSearchPanel.contains(event.target);
+
+  if (isDrawerOpen && !isMenuClick && !isDrawerClick) {
+    setDrawer(false);
+  }
+
+  if (isSearchOpen && !isSearchClick && !isSearchPanelClick) {
+    setHeaderSearch(false);
+  }
 });
 
 drawer.addEventListener("click", (event) => {
