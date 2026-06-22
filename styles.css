@@ -2069,8 +2069,21 @@ input {
     line-height: 1.42;
   }
 
+  .hero-card h2.hero-salary-title {
+    font-size: 16px;
+    line-height: 1.48;
+    letter-spacing: 0;
+  }
+
   .hero-card h2 span {
     white-space: nowrap;
+  }
+
+  .hero-card h2.hero-salary-title span {
+    display: block;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
   }
 
   .hero-card > div {
