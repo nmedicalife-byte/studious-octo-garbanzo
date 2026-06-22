@@ -1322,12 +1322,18 @@ input {
   margin: 28px 0;
 }
 
-.haken-flow > div {
+.haken-flow > div,
+.haken-rule-grid > div,
+.haken-question-grid > section {
   min-width: 0;
   padding: 18px;
-  background: #f7fbfb;
+  background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.haken-flow > div {
+  background: #f7fbfb;
 }
 
 .haken-flow span {
@@ -1338,20 +1344,22 @@ input {
   font-weight: 900;
 }
 
-.haken-flow strong {
+.haken-flow strong,
+.haken-rule-grid strong {
   display: block;
   margin-bottom: 8px;
   line-height: 1.45;
 }
 
-.haken-flow p {
+.haken-flow p,
+.haken-rule-grid p,
+.haken-question-grid p {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
 }
 
 .haken-flow i {
-  position: relative;
   display: grid;
   place-items: center;
 }
@@ -1372,28 +1380,10 @@ input {
   margin: 24px 0;
 }
 
-.haken-rule-grid > div,
-.haken-question-grid > section {
-  min-width: 0;
-  padding: 18px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-.haken-rule-grid strong,
 .haken-question-grid h3 {
-  display: block;
   margin: 0 0 8px;
   font-size: 17px;
   line-height: 1.55;
-}
-
-.haken-rule-grid p,
-.haken-question-grid p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
 }
 
 .rule-badge {
