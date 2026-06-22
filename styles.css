@@ -2065,12 +2065,17 @@ input {
   }
 
   .hero-card h2 {
-    font-size: clamp(20px, 5.4vw, 22px);
-    line-height: 1.38;
+    font-size: clamp(18px, 4.8vw, 19px);
+    line-height: 1.42;
   }
 
   .hero-card h2 span {
     white-space: nowrap;
+  }
+
+  .hero-card > div {
+    padding-right: 18px;
+    padding-left: 18px;
   }
 
   .article-detail {
