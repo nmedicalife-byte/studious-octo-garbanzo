@@ -630,10 +630,6 @@ input {
   display: block;
 }
 
-.hero-card h2.salary-card-title span {
-  white-space: nowrap;
-}
-
 @media (min-width: 721px) {
   .hero-card h2 span {
     white-space: nowrap;
@@ -1314,6 +1310,192 @@ input {
   font-size: 13px;
 }
 
+.haken-title span {
+  display: block;
+}
+
+.haken-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr) 42px minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  margin: 28px 0;
+}
+
+.haken-flow > div {
+  min-width: 0;
+  padding: 18px;
+  background: #f7fbfb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.haken-flow span {
+  display: inline-flex;
+  margin-bottom: 8px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.haken-flow strong {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.haken-flow p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.haken-flow i {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.haken-flow i::before {
+  content: "→";
+  color: var(--primary);
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.haken-rule-grid,
+.haken-question-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.haken-rule-grid > div,
+.haken-question-grid > section {
+  min-width: 0;
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.haken-rule-grid strong,
+.haken-question-grid h3 {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.haken-rule-grid p,
+.haken-question-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.rule-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.rule-stop {
+  color: #8e2937;
+  background: #fde8ec;
+}
+
+.rule-ok {
+  color: #20633e;
+  background: #e7f5ed;
+}
+
+.rule-check {
+  color: #735100;
+  background: #fff3d8;
+}
+
+.compact-haken-table td {
+  white-space: normal;
+}
+
+.haken-simulator {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.9fr) minmax(280px, 1.1fr);
+  gap: 18px;
+  margin: 26px 0;
+  padding: 22px;
+  background: linear-gradient(135deg, rgba(26, 166, 167, 0.08), rgba(242, 184, 75, 0.1));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.haken-simulator h3 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+
+.haken-simulator label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0 6px;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.haken-simulator input {
+  width: 100%;
+  min-height: 43px;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.haken-result {
+  display: grid;
+  gap: 12px;
+}
+
+.haken-result > div {
+  padding: 16px;
+  background: var(--white);
+  border: 1px solid rgba(26, 166, 167, 0.2);
+  border-radius: 8px;
+}
+
+.haken-result span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.haken-result strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--primary-dark);
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.2;
+}
+
+.haken-result p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .career-stat-bars {
   display: grid;
   gap: 12px;
@@ -1897,11 +2079,6 @@ input {
     line-height: 1.32;
   }
 
-  .hero-card h2.salary-card-title {
-    font-size: 21px;
-    line-height: 1.34;
-  }
-
   .article-detail {
     padding-top: 34px;
     padding-right: 18px;
@@ -1960,12 +2137,28 @@ input {
   .mental-sign-grid,
   .relationship-map,
   .community-rings,
-  .decision-checklist {
+  .decision-checklist,
+  .haken-flow,
+  .haken-rule-grid,
+  .haken-question-grid,
+  .haken-simulator {
     grid-template-columns: 1fr;
   }
 
   .career-stat-row {
     gap: 8px;
+  }
+
+  .haken-flow {
+    gap: 10px;
+  }
+
+  .haken-flow i {
+    display: none;
+  }
+
+  .haken-result strong {
+    font-size: 26px;
   }
 
   .data-table {
