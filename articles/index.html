@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Smart Nurse Labの記事一覧ページです。看護師の働き方、勉強・資格、転職、夜勤、お金、メンタル、暮らしの記事を新着順に探せます。"
+    />
+    <title>記事一覧 | Smart Nurse Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="../index.html" aria-label="Smart Nurse Lab">
+        <span class="logo-mark" aria-hidden="true">
+          <span class="logo-cross"></span>
+          <span class="logo-pulse"></span>
+          <span class="logo-dot logo-dot-a"></span>
+          <span class="logo-dot logo-dot-b"></span>
+        </span>
+        <span><strong>Smart Nurse Lab</strong></span>
+      </a>
+      <div class="header-actions">
+        <button class="header-search" type="button" aria-expanded="false" aria-controls="headerSearchPanel" aria-label="検索パネルを開く">
+          <span class="search-icon" aria-hidden="true"></span>
+        </button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く">
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+          <span class="menu-text">MENU</span>
+        </button>
+      </div>
+    </header>
+
+    <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
+      <label for="headerArticleSearch">記事を検索</label>
+      <div class="search-row">
+        <input id="headerArticleSearch" type="search" placeholder="例: 資格、夜勤、転職、お金" data-search-input />
+        <button type="submit">検索</button>
+      </div>
+      <div class="keywords" aria-label="人気キーワード">
+        <button type="button" data-keyword="資格">資格</button>
+        <button type="button" data-keyword="夜勤">夜勤</button>
+        <button type="button" data-keyword="転職">転職</button>
+        <button type="button" data-keyword="メンタル">メンタル</button>
+      </div>
+    </form>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-heading">
+        <span>Category</span>
+        <strong>記事カテゴリ</strong>
+      </div>
+      <nav class="drawer-nav" aria-label="カテゴリメニュー">
+        <a aria-disabled="true"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">資格・学習</span><span class="drawer-link-en">study</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">健康</span><span class="drawer-link-en">health</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">転職サービス</span><span class="drawer-link-en">career services</span></a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="article-index-hero">
+        <a class="back-link" href="../index.html">Smart Nurse Lab</a>
+        <p class="eyebrow">All posts</p>
+        <h1>記事一覧</h1>
+        <p>新着順に、Smart Nurse Labの記事をまとめています。気になるテーマから、今の自分に必要な記事を探してみてください。</p>
+        <div class="article-index-filters" aria-label="カテゴリ">
+          <a href="#all" data-filter="all" aria-current="true">すべて</a>
+          <a href="#study" data-filter="study">勉強・資格</a>
+          <a href="#career" data-filter="career">転職</a>
+          <a href="#night" data-filter="night">夜勤</a>
+          <a href="#mental" data-filter="mental">メンタル</a>
+          <a href="#money" data-filter="money">給与</a>
+          <a href="#life" data-filter="life">ライフスタイル</a>
+        </div>
+      </section>
+
+      <section class="section article-index-section" id="all">
+        <div class="card-grid article-grid article-index-grid">
+          <a class="article-card" id="study" href="./nurse-certification-before-study.html" data-title="看護師 資格 勉強 BLS ACLS 認定看護師 専門看護師 NP キャリア お金 時間" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-study.jpg" alt="仕事後に机で資格勉強をする看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師が資格を取る前に考えたいこと</h3>
+              <p>時間・お金・キャリアの整え方</p>
+              <time datetime="2026-06-23">2026.6.23</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="life" href="./nurse-minimalist-mindset.html" data-title="看護師 ミニマリスト 思考 暮らし バッグ ナースグッズ お金 時間 夜勤" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-minimalism-hero.png" alt="出勤前にバッグへ荷物を入れる看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師とミニマリスト思考</h3>
+              <p>モノ・お金・時間を整えて身軽に働く</p>
+              <time datetime="2026-06-22">2026.6.22</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="career" href="./nurse-career-places.html" data-title="看護師 資格 働ける場所 病院以外 転職 キャリア" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-career.jpg" alt="看護師資格で選べる職場を考えるイメージ" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>看護師資格で働ける場所はいくつある？</h3>
+              <p>病院以外の選択肢とキャリアの広げ方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="night" href="./night-shift-recovery.html" data-title="夜勤前 夜勤明け 過ごし方 睡眠 食事 予定 休み方" data-category="生活・健康" data-index-category="night">
+            <img src="../assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
+            <div class="article-body">
+              <span class="tag">生活・健康</span>
+              <h3>夜勤前・夜勤明けの過ごし方の最適解</h3>
+              <p>睡眠・食事・予定の組み方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="mental" href="./nurse-mental-limit.html" data-title="看護師 辞めたい 限界 メンタル 心 守る 人間関係" data-category="メンタル" data-index-category="mental">
+            <img src="../assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
+            <div class="article-body">
+              <span class="tag">メンタル</span>
+              <h3>看護師を辞めたいと思ったら</h3>
+              <p>限界サインと心を守るための考え方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="money" href="./nurse-salary-guide.html" data-title="看護師 給料 給与 年収 手当 明細 夜勤 転職" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-money.jpg" alt="給与明細の手当と控除を確認する看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>看護師の平均年収はいくら？</h3>
+              <p>給与の決まり方と上げ方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./handover-template.html" data-title="申し送り テンプレート 看護師 情報共有 記録 SBAR" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-handover.jpg" alt="申し送り内容を整理する看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>申し送りが苦手な看護師へ</h3>
+              <p>情報を整理して伝えるためのテンプレート</p>
+              <time datetime="2026-06-21">2026.6.21</time>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>2026 Copyright Smart Nurse Lab All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

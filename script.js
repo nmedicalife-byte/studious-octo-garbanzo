@@ -8,9 +8,11 @@ const header = document.querySelector(".site-header");
 const headerSearch = document.querySelector(".header-search");
 const headerSearchPanel = document.querySelector("#headerSearchPanel");
 const headerSearchInput = document.querySelector("#headerArticleSearch");
+const articleIndexFilters = document.querySelectorAll("[data-filter]");
+const articleIndexCards = document.querySelectorAll("[data-index-category]");
 const progress = document.querySelector(".scroll-progress");
 const revealTargets = document.querySelectorAll(
-  ".quick-links a, .section-heading, .article-card, .wide-card, .category-grid a, .career-list a"
+  ".quick-links a, .section-heading, .article-card, .wide-card, .category-grid a, .career-list a, .section-action"
 );
 
 function setDrawer(open) {
@@ -52,6 +54,28 @@ function runSearch(term) {
   });
 
   filterArticles(term);
+}
+
+function setArticleIndexFilter(filter, updateHash = true) {
+  if (!articleIndexFilters.length || !articleIndexCards.length) {
+    return;
+  }
+
+  const activeFilter = filter || "all";
+
+  articleIndexFilters.forEach((link) => {
+    const isActive = link.dataset.filter === activeFilter;
+    link.setAttribute("aria-current", String(isActive));
+  });
+
+  articleIndexCards.forEach((card) => {
+    const matches = activeFilter === "all" || card.dataset.indexCategory === activeFilter;
+    card.hidden = !matches;
+  });
+
+  if (updateHash) {
+    history.replaceState(null, "", `#${activeFilter}`);
+  }
 }
 
 function updateScrollEffects() {
@@ -113,6 +137,13 @@ keywordButtons.forEach((button) => {
   });
 });
 
+articleIndexFilters.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    setArticleIndexFilter(link.dataset.filter);
+  });
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     setHeaderSearch(false);
@@ -139,4 +170,8 @@ const revealObserver = new IntersectionObserver(
 
 revealTargets.forEach((target) => revealObserver.observe(target));
 window.addEventListener("scroll", updateScrollEffects, { passive: true });
+window.addEventListener("hashchange", () => {
+  setArticleIndexFilter(window.location.hash.replace("#", ""), false);
+});
+setArticleIndexFilter(window.location.hash.replace("#", ""), false);
 updateScrollEffects();
