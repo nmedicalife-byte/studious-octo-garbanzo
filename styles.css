@@ -630,6 +630,10 @@ input {
   display: block;
 }
 
+.hero-card h2.salary-card-title span {
+  white-space: nowrap;
+}
+
 @media (min-width: 721px) {
   .hero-card h2 span {
     white-space: nowrap;
@@ -1310,182 +1314,6 @@ input {
   font-size: 13px;
 }
 
-.haken-title span {
-  display: block;
-}
-
-.haken-flow {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr) 42px minmax(0, 1fr);
-  gap: 0;
-  align-items: stretch;
-  margin: 28px 0;
-}
-
-.haken-flow > div,
-.haken-rule-grid > div,
-.haken-question-grid > section {
-  min-width: 0;
-  padding: 18px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-.haken-flow > div {
-  background: #f7fbfb;
-}
-
-.haken-flow span {
-  display: inline-flex;
-  margin-bottom: 8px;
-  color: var(--primary-dark);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.haken-flow strong,
-.haken-rule-grid strong {
-  display: block;
-  margin-bottom: 8px;
-  line-height: 1.45;
-}
-
-.haken-flow p,
-.haken-rule-grid p,
-.haken-question-grid p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.haken-flow i {
-  display: grid;
-  place-items: center;
-}
-
-.haken-flow i::before {
-  content: "→";
-  color: var(--primary);
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.haken-rule-grid,
-.haken-question-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin: 24px 0;
-}
-
-.haken-question-grid h3 {
-  margin: 0 0 8px;
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-.rule-badge {
-  display: inline-flex;
-  align-items: center;
-  min-height: 30px;
-  margin-bottom: 12px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.rule-stop {
-  color: #8e2937;
-  background: #fde8ec;
-}
-
-.rule-ok {
-  color: #20633e;
-  background: #e7f5ed;
-}
-
-.rule-check {
-  color: #735100;
-  background: #fff3d8;
-}
-
-.compact-haken-table td {
-  white-space: normal;
-}
-
-.haken-simulator {
-  display: grid;
-  grid-template-columns: minmax(250px, 0.9fr) minmax(280px, 1.1fr);
-  gap: 18px;
-  margin: 26px 0;
-  padding: 22px;
-  background: linear-gradient(135deg, rgba(26, 166, 167, 0.08), rgba(242, 184, 75, 0.1));
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-.haken-simulator h3 {
-  margin: 0 0 14px;
-  font-size: 20px;
-}
-
-.haken-simulator label {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 12px 0 6px;
-  color: var(--primary-dark);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.haken-simulator input {
-  width: 100%;
-  min-height: 43px;
-  padding: 9px 12px;
-  color: var(--ink);
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-.haken-result {
-  display: grid;
-  gap: 12px;
-}
-
-.haken-result > div {
-  padding: 16px;
-  background: var(--white);
-  border: 1px solid rgba(26, 166, 167, 0.2);
-  border-radius: 8px;
-}
-
-.haken-result span {
-  display: block;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.haken-result strong {
-  display: block;
-  margin-top: 3px;
-  color: var(--primary-dark);
-  font-size: clamp(26px, 4vw, 36px);
-  line-height: 1.2;
-}
-
-.haken-result p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .career-stat-bars {
   display: grid;
   gap: 12px;
@@ -1706,6 +1534,274 @@ input {
   background: rgba(26, 166, 167, 0.1);
   border-radius: 50%;
   font-size: 13px;
+  font-weight: 900;
+}
+
+.minimal-reason-grid,
+.minimal-kit-grid,
+.minimal-home-flow {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.minimal-reason-grid,
+.minimal-kit-grid,
+.minimal-home-flow {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.minimal-reason-grid > div,
+.minimal-kit-grid > div,
+.minimal-home-flow > div,
+.amazon-book-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.minimal-reason-grid > div,
+.minimal-kit-grid > div,
+.minimal-home-flow > div {
+  padding: 18px;
+}
+
+.minimal-reason-grid span,
+.minimal-kit-grid span {
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.minimal-reason-grid strong,
+.minimal-kit-grid strong,
+.minimal-home-flow strong {
+  display: block;
+  margin: 6px 0;
+}
+
+.minimal-reason-grid p,
+.minimal-kit-grid p,
+.minimal-home-flow p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.minimal-home-flow span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  color: var(--primary-dark);
+  background: rgba(26, 166, 167, 0.1);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.minimal-action-list {
+  padding: 18px 18px 18px 2.1em;
+  background: #f7fbfb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.minimal-reference-block {
+  display: grid;
+  gap: 18px;
+  margin: 24px 0;
+  padding: 18px;
+  background: #f7fbfb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.social-guide {
+  display: grid;
+  gap: 4px;
+}
+
+.social-guide strong {
+  font-size: 18px;
+}
+
+.social-guide p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.amazon-book-card {
+  display: grid;
+  gap: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.amazon-book-card:hover {
+  border-color: rgba(26, 166, 167, 0.38);
+  box-shadow: 0 16px 34px rgba(9, 88, 92, 0.13);
+  transform: translateY(-3px);
+}
+
+.amazon-book-info span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.amazon-book-info h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.amazon-book-info p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.amazon-book-info em {
+  display: inline-flex;
+  justify-content: center;
+  width: fit-content;
+  min-width: 190px;
+  margin-top: 8px;
+  padding: 10px 16px;
+  color: var(--white);
+  background: #07171c;
+  border-radius: 8px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.social-icon-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(9, 88, 92, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-icon-link:hover {
+  box-shadow: 0 12px 26px rgba(9, 88, 92, 0.18);
+  transform: translateY(-2px);
+}
+
+.social-icon-link span {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.social-icon-link i {
+  display: inline-grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: var(--white);
+  background: #07171c;
+  border-radius: 5px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.social-icon-link i::before {
+  content: "X";
+}
+
+.social-icon-link svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.youtube-icon svg rect {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.youtube-icon svg path {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+.instagram-icon {
+  color: #d93976;
+}
+
+.x-icon {
+  color: #07171c;
+}
+
+.youtube-icon {
+  color: #ff0033;
+}
+
+.amazon-book-card {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  gap: 18px;
+  align-items: stretch;
+  padding: 0;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.amazon-book-info {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 24px;
+}
+
+.amazon-book-info strong {
+  font-size: 18px;
+}
+
+.amazon-book-thumb {
+  display: grid;
+  width: 100%;
+  min-height: 220px;
+  place-items: center;
+  color: var(--primary-dark);
+  background:
+    linear-gradient(135deg, rgba(26, 166, 167, 0.08), transparent 42%),
+    #ffffff;
+  border-left: 1px solid var(--line);
+}
+
+.amazon-book-thumb span {
+  display: grid;
+  width: 62px;
+  height: 78px;
+  place-items: center;
+  background: #fff8eb;
+  border: 1px solid rgba(242, 184, 75, 0.36);
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(9, 88, 92, 0.08);
+  font-size: 12px;
   font-weight: 900;
 }
 
@@ -2065,30 +2161,13 @@ input {
   }
 
   .hero-card h2 {
-    font-size: clamp(18px, 4.8vw, 19px);
-    line-height: 1.42;
+    font-size: clamp(24px, 6vw, 29px);
+    line-height: 1.32;
   }
 
-  .hero-card h2.hero-salary-title {
-    font-size: 16px;
-    line-height: 1.48;
-    letter-spacing: 0;
-  }
-
-  .hero-card h2 span {
-    white-space: nowrap;
-  }
-
-  .hero-card h2.hero-salary-title span {
-    display: block;
-    white-space: nowrap;
-    word-break: keep-all;
-    overflow-wrap: normal;
-  }
-
-  .hero-card > div {
-    padding-right: 18px;
-    padding-left: 18px;
+  .hero-card h2.salary-card-title {
+    font-size: 24px;
+    line-height: 1.34;
   }
 
   .article-detail {
@@ -2146,31 +2225,28 @@ input {
   .night-burden-list,
   .night-plan,
   .night-after-flow,
+  .minimal-reason-grid,
+  .minimal-kit-grid,
+  .minimal-home-flow,
   .mental-sign-grid,
   .relationship-map,
   .community-rings,
-  .decision-checklist,
-  .haken-flow,
-  .haken-rule-grid,
-  .haken-question-grid,
-  .haken-simulator {
+  .decision-checklist {
     grid-template-columns: 1fr;
+  }
+
+  .amazon-book-card {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-book-thumb {
+    min-height: 210px;
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
   .career-stat-row {
     gap: 8px;
-  }
-
-  .haken-flow {
-    gap: 10px;
-  }
-
-  .haken-flow i {
-    display: none;
-  }
-
-  .haken-result strong {
-    font-size: 26px;
   }
 
   .data-table {
