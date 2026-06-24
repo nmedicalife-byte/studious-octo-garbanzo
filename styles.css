@@ -1565,6 +1565,196 @@ input {
   margin: 0;
 }
 
+.fee-document-grid,
+.fee-care-list,
+.fee-reading-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.fee-document-grid > div,
+.fee-care-list article,
+.fee-reading-map > div {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #f8fbfa;
+}
+
+.fee-document-grid span,
+.fee-care-list span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--primary-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.fee-document-grid strong,
+.fee-care-list strong,
+.fee-reading-map strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+.fee-document-grid p,
+.fee-care-list p,
+.fee-reading-map p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.fee-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 26px 0;
+}
+
+.fee-flow > div {
+  position: relative;
+  padding: 20px 16px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #eaf7f3, #f9fcfb);
+}
+
+.fee-flow span,
+.fee-reform-list > div > span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.fee-flow strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.fee-flow p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.fee-balance-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  margin: 26px 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f3faf7, #fffaf0);
+}
+
+.fee-balance-card > span {
+  color: var(--primary-dark);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.fee-balance-card strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.fee-balance-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.fee-salary-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.fee-salary-compare > div {
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.fee-salary-ng {
+  border: 1px solid #efc5c0;
+  background: #fff7f5;
+}
+
+.fee-salary-ok {
+  border: 1px solid #b9ddd1;
+  background: #f2faf7;
+}
+
+.fee-salary-compare span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.fee-salary-ng span {
+  color: #a44b42;
+}
+
+.fee-salary-ok span {
+  color: var(--primary-dark);
+}
+
+.fee-salary-compare strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.fee-reform-list {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.fee-reform-list > div {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.fee-reform-list > div > span {
+  margin: 0;
+}
+
+.fee-reform-list strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.fee-reform-list p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 .article-sources {
   padding: 24px;
   border-radius: 18px;
@@ -2955,6 +3145,26 @@ input {
 
   .article-hero h1.ai-article-title {
     font-size: 23px;
+  }
+
+  .article-hero h1.fee-article-title {
+    font-size: 25px;
+  }
+
+  .fee-document-grid,
+  .fee-care-list,
+  .fee-reading-map,
+  .fee-flow,
+  .fee-salary-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-balance-card {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-balance-card > span {
+    justify-self: center;
   }
 
   .contract-sample-list {
