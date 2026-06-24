@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="看護師は生成AIをどう使えばよいのでしょうか。仕事や勉強に役立つ使い方、入力しない方がよい患者情報、創傷写真、AIに任せてはいけない判断をSmart Nurse Labが整理します。" />
+    <title>看護師は生成AIをどう使う？仕事と勉強に生かす方法、入力してはいけない情報 | Smart Nurse Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="../index.html" aria-label="Smart Nurse Lab">
+        <span class="logo-mark" aria-hidden="true"><span class="logo-cross"></span><span class="logo-pulse"></span><span class="logo-dot logo-dot-a"></span><span class="logo-dot logo-dot-b"></span></span>
+        <span><strong>Smart Nurse Lab</strong></span>
+      </a>
+      <div class="header-actions">
+        <button class="header-search" type="button" aria-expanded="false" aria-controls="headerSearchPanel" aria-label="検索パネルを開く"><span class="search-icon" aria-hidden="true"></span></button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く"><span class="menu-icon" aria-hidden="true"><span></span><span></span></span><span class="menu-text">MENU</span></button>
+      </div>
+    </header>
+    <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
+      <label for="headerArticleSearch">記事を検索</label>
+      <div class="search-row"><input id="headerArticleSearch" type="search" placeholder="例: 生成AI、患者情報、勉強、ChatGPT" data-search-input /><button type="submit">検索</button></div>
+      <div class="keywords" aria-label="人気キーワード"><button type="button" data-keyword="生成AI">生成AI</button><button type="button" data-keyword="患者情報">患者情報</button><button type="button" data-keyword="勉強">勉強</button><button type="button" data-keyword="安全">安全</button></div>
+    </form>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-heading"><span>Category</span><strong>記事カテゴリ</strong></div>
+      <nav class="drawer-nav" aria-label="カテゴリメニュー">
+        <a aria-disabled="true"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">資格・学習</span><span class="drawer-link-en">study</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">健康</span><span class="drawer-link-en">health</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
+        <a aria-disabled="true"><span class="drawer-link-ja">転職サービス</span><span class="drawer-link-en">career services</span></a>
+      </nav>
+    </aside>
+
+    <main class="article-page">
+      <article class="article-detail">
+        <header class="article-hero">
+          <a class="back-link" href="../index.html">Smart Nurse Lab</a>
+          <div class="article-meta"><span class="tag">勉強・資格</span><time datetime="2026-06-24">2026.6.24</time></div>
+          <h1 class="ai-article-title">看護師は生成AIをどう使う？仕事と勉強に生かす方法、入力してはいけない情報</h1>
+          <p>便利さだけでなく、患者情報を守る境界線まで。変化の途中にあるAIとの付き合い方を一緒に考えます。</p>
+          <img src="../assets/photo-nurse-generative-ai.png" alt="生成AIを使いながらノートで勉強する看護師" />
+        </header>
+
+        <div class="article-layout">
+          <nav class="article-toc" aria-label="記事の目次">
+            <strong>目次</strong>
+            <a href="#starting-point">1. AIとの付き合い方</a>
+            <a href="#risk">2. 安全対策とリスク</a>
+            <a href="#do-not-input">3. 入力しない情報</a>
+            <a href="#wound-photo">4. 創傷写真は送れる？</a>
+            <a href="#do-not-delegate">5. 任せない判断</a>
+            <a href="#use-cases">6. 安全な活用方法</a>
+            <a href="#prompt-examples">7. 質問の置き換え方</a>
+            <a href="#check">8. 利用前チェック</a>
+          </nav>
+
+          <div class="article-content">
+            <p>ChatGPT、Gemini、Claudeなどの生成AIが、仕事や勉強の身近な道具になりつつあります。わからない言葉を説明してもらう。文章の下書きを整える。勉強計画を一緒に考える。忙しい看護師にとって、有益なツールであることは間違いありません。</p>
+            <p>一方で、看護師が扱う情報には、患者さんの病歴、検査結果、画像、看護記録などが含まれます。「名前を消せば入力してよいのか」「顔が写っていない創傷写真なら送れるのか」「AIの回答をケアに使ってよいのか」。便利になるほど、どこまで使ってよいのか迷う場面も増えていきます。</p>
+            <p>生成AIは、まだ変化の途中にあります。この記事では、AIを一方的にすすめることも、怖いものとして遠ざけることもしません。現時点で守りたい境界線と、患者情報を使わずに役立てる方法を、Smart Nurse Labと一緒に考えていきましょう。</p>
+
+            <section id="starting-point">
+              <h2>AIを使うことより、境界線を知らずに使うことが怖い</h2>
+              <p>生成AIは、入力された文章や画像に対して、もっともらしい回答を作る仕組みです。会話が自然でも、内容を人間のように理解し、正しさを保証しているわけではありません。存在しない情報を事実のように答えることもあります。</p>
+              <p>そのため、看護師が生成AIを使うときは、次の3つを分けて考える必要があります。</p>
+              <div class="ai-boundary-grid" aria-label="看護師が生成AIを使うときの3つの境界線">
+                <div><span>Input</span><strong>AIに渡さない</strong><p>患者情報や院内情報を、個人向けAIへ入力しない。</p></div>
+                <div><span>Decision</span><strong>AIに任せない</strong><p>診断、治療、緊急度などの医療判断を委ねない。</p></div>
+                <div><span>Check</span><strong>人が確かめる</strong><p>回答は一次情報や院内基準に戻って確認する。</p></div>
+              </div>
+              <p>この境界線があれば、AIは「答えを決めてもらう場所」ではなく、「考え始めるための補助道具」として使いやすくなります。</p>
+            </section>
+
+            <section id="risk">
+              <h2>安全対策があっても、漏洩リスクはゼロではない</h2>
+              <p>多くのAI企業は、通信や保存データの暗号化、アクセス管理などの安全対策を行っています。しかし、それは「入力した情報が絶対に漏れない」という意味ではありません。</p>
+              <p>ChatGPTでは2023年3月、システムの不具合により、一部の利用者に別の利用者のチャット履歴タイトルなどが表示される可能性があったとOpenAIが公表しています。外部サービスや利用者のアカウント管理を含めれば、フィッシング、パスワードの使い回し、端末の紛失など、情報が外へ出る経路は一つではありません。</p>
+              <div class="article-note"><strong>「学習に使われない」と「保存されない・漏れない」は別</strong><p>AIの学習利用をオフにしても、サービスの安全管理などのために一定期間データが保持される場合があります。設定だけを根拠に、患者情報を入力してよいとは考えない方が安全です。</p></div>
+              <p>個人情報保護委員会も、生成AIサービスへ個人情報を入力する際は、利用目的の範囲内か、提供事業者が機械学習に利用しないことなどを十分確認するよう注意を呼びかけています。サービスごとに規約や設定は異なり、今後変更される可能性もあります。</p>
+            </section>
+
+            <section id="do-not-input">
+              <h2>個人向け生成AIに入力しない方がよい4つの情報</h2>
+              <p>Smart Nurse Labでは、勤務先が正式に承認した専用環境ではない個人向け生成AIに、次の情報を入力しないことを基本にします。</p>
+              <div class="ai-private-list" aria-label="生成AIに入力しない方がよい情報">
+                <div><span>01</span><div><strong>患者を特定できる情報</strong><p>氏名、患者番号、生年月日、住所、電話番号、顔写真など。イニシャルへの置き換えだけでも十分とは限りません。</p></div></div>
+                <div><span>02</span><div><strong>経過や検査値を組み合わせた症例情報</strong><p>年齢、病名、入院日、地域、手術日、珍しい経過などは、名前がなくても組み合わせによって本人を推測できる場合があります。</p></div></div>
+                <div><span>03</span><div><strong>電子カルテや院内文書</strong><p>看護記録、退院サマリー、検査結果、申し送り、インシデント報告、院内マニュアルを、そのまま貼り付けたり撮影して送ったりしないようにします。</p></div></div>
+                <div><span>04</span><div><strong>職員・施設内部の情報</strong><p>職員名、勤務表、未公開の運用、ログイン画面、会議資料、施設内の写真なども、業務上の機密情報にあたる可能性があります。</p></div></div>
+              </div>
+              <p>「匿名化したつもり」と「再び本人を特定できない状態」は同じではありません。実在する患者さんから得た情報は、個人の判断で加工して入力するより、患者さんから切り離した一般的な質問に置き換える方が迷いません。</p>
+            </section>
+
+            <section id="wound-photo">
+              <h2>顔が写っていない創傷・褥瘡の写真なら送ってもよい？</h2>
+              <p>顔が写っていなくても、患者さんの創傷や褥瘡の写真を個人向け生成AIへ送ることは避けた方が安全です。</p>
+              <p>創部の特徴、刺青、装具、背景、撮影日時などから本人を推測できる可能性があります。会話の中で年齢、疾患、入院経過などを追加すれば、特定につながる情報はさらに増えます。写真の情報主体は患者さんであり、入力した利用者だけの「自己責任」では完結しません。勤務先の守秘義務や情報管理規程も関係します。</p>
+              <p>また、写真だけでは創傷の深さ、感染、血流、疼痛、全身状態などを十分に評価できません。AIの画像回答を診断や治療方針の根拠にすると、誤った判断につながるおそれがあります。</p>
+              <div class="ai-stop-card"><strong>個人向けAIには送らない</strong><p>患者さんの創傷・褥瘡・皮膚症状・検査画像・モニター画面・カルテ画面</p></div>
+              <p>医療機関が正式に導入し、契約、利用目的、患者同意、アクセス管理、院内規程などが整えられた環境は別に検討されます。ただし、その場合もAIだけで判断せず、医療者が所見と一次情報を確認することが前提です。</p>
+            </section>
+
+            <section id="do-not-delegate">
+              <h2>AIに任せてはいけない判断</h2>
+              <p>生成AIは自信のある文章を作りますが、回答の確かさと文章の自然さは一致しません。とくに患者さんへの影響が大きい判断は任せないようにします。</p>
+              <div class="ai-decision-grid" aria-label="生成AIに任せてはいけない判断">
+                <div><strong>診断・鑑別</strong><p>症状や画像から病名を決める。</p></div>
+                <div><strong>治療・処置</strong><p>薬剤、投与量、処置方法を決める。</p></div>
+                <div><strong>緊急度</strong><p>報告、受診、急変対応の要否を決める。</p></div>
+                <div><strong>看護記録</strong><p>観察していない事実や評価を作らせる。</p></div>
+                <div><strong>院内ルール</strong><p>勤務先の手順を確認せずAI回答を優先する。</p></div>
+                <div><strong>患者説明</strong><p>出典未確認の回答をそのまま伝える。</p></div>
+              </div>
+              <p>AIの回答が自分の考えと一致すると、正しく見えやすくなります。便利な文章ほど、「誰が、何を根拠に確かめたか」を残す意識が必要です。</p>
+            </section>
+
+            <section id="use-cases">
+              <h2>患者情報を使わずに、仕事と勉強へ生かす</h2>
+              <p>境界線を守れば、生成AIは看護師の学びや生活を支える道具として活用できます。ポイントは、実在患者の相談ではなく、一般化された学習や自分自身の整理に使うことです。</p>
+              <div class="ai-use-grid" aria-label="看護師が生成AIを安全に使いやすい場面">
+                <div><span>Study</span><strong>学習の入口をつくる</strong><p>難しい用語をやさしく説明してもらい、あとで教科書やガイドラインを確認する。</p></div>
+                <div><span>Quiz</span><strong>確認問題をつくる</strong><p>一般的な疾患や看護テーマから、自分用の一問一答や復習問題を作る。</p></div>
+                <div><span>Plan</span><strong>勉強計画を分ける</strong><p>試験日や使える時間をもとに、無理のない学習単位へ分解する。</p></div>
+                <div><span>Writing</span><strong>一般的な文章を整える</strong><p>患者情報を含まない案内文、研修の構成、自分の振り返り文章を読みやすくする。</p></div>
+                <div><span>Career</span><strong>キャリアを言葉にする</strong><p>得意なこと、苦手なこと、今後の希望を質問してもらい、考えを整理する。</p></div>
+                <div><span>Life</span><strong>暮らしを整える</strong><p>夜勤のある一週間の家事、食事、勉強時間など、自分の予定を組み立てる。</p></div>
+              </div>
+              <p class="source-note">医療知識の確認では、AIの回答を最終的な出典にせず、最新のガイドライン、添付文書、行政・学会・勤務先の資料へ戻って確認してください。</p>
+            </section>
+
+            <section id="prompt-examples">
+              <h2>危険な質問を、安全な学習用の質問へ置き換える</h2>
+              <p>AIを安全に使うコツは、情報を少し隠すことではなく、実在する患者さんから質問を切り離すことです。</p>
+              <div class="ai-prompt-list">
+                <article><div class="ai-prompt-ng"><span>入力しない</span><p>「82歳の○○さん。昨日入院し、検査値は……。この状態なら何をすべき？」</p></div><div class="ai-prompt-ok"><span>置き換える</span><p>「心不全について学習しています。一般的な観察項目を、呼吸・循環・水分出納に分けて整理してください。回答後に確認すべき一次情報も教えてください」</p></div></article>
+                <article><div class="ai-prompt-ng"><span>入力しない</span><p>「この患者さんの褥瘡写真を見て、ステージと処置を教えて」</p></div><div class="ai-prompt-ok"><span>置き換える</span><p>「褥瘡評価について勉強しています。DESIGN-R®で確認する項目の概要と、写真だけでは判断できない点を説明してください」</p></div></article>
+                <article><div class="ai-prompt-ng"><span>入力しない</span><p>「この看護記録をSOAP形式に直して」とカルテ文章を貼り付ける。</p></div><div class="ai-prompt-ok"><span>置き換える</span><p>「架空の事例を使って、SOAPの各項目に何を書くかを学習用に説明してください。実在する患者情報は使用しないでください」</p></div></article>
+              </div>
+              <p>一般化しても、その回答を実際の患者さんへそのまま当てはめることはできません。AIで学んだ内容は、患者さんを観察し、チームへ報告し、正式な手順や資料を確認するための準備として使います。</p>
+            </section>
+
+            <section id="check">
+              <h2>生成AIを開く前のチェックリスト</h2>
+              <p>入力ボタンを押す前に、次の項目を一度確認してみてください。迷う情報は、入力しない側に置く方が安全です。</p>
+              <div class="decision-checklist" aria-label="生成AIを利用する前の確認項目">
+                <div><strong>実在する患者の情報ではない</strong><span>名前を消しただけでなく、経過や日付などを組み合わせても患者を推測できない。</span></div>
+                <div><strong>画像や院内文書を含んでいない</strong><span>創傷写真、カルテ画面、検査画像、勤務表、マニュアルなどを送っていない。</span></div>
+                <div><strong>勤務先のルールを確認した</strong><span>施設が認めていないAIを、業務目的で勝手に利用していない。</span></div>
+                <div><strong>医療判断を任せていない</strong><span>診断、治療、投薬、緊急度、報告の要否をAIだけで決めようとしていない。</span></div>
+                <div><strong>確認できる出典がある</strong><span>ガイドライン、添付文書、院内手順など、回答を確かめる先がある。</span></div>
+                <div><strong>漏れたら困る情報ではない</strong><span>公開されても患者、職員、施設、自分が困らない内容だけを入力している。</span></div>
+              </div>
+            </section>
+
+            <section>
+              <h2>まとめ：AIと一緒に考えながら、境界線は曖昧にしない</h2>
+              <p>生成AIには、看護師の勉強を助け、文章や考えを整理し、忙しい毎日に少し余白をつくる可能性があります。一方で、安全対策が行われていても、情報漏洩や誤回答のリスクをゼロにはできません。</p>
+              <p>患者を特定できる情報、経過や検査値を組み合わせた症例情報、電子カルテや院内文書、職員・施設内部の情報は、個人向け生成AIへ入力しない。顔が写っていない創傷写真も送らない。診断や治療などの判断をAIに任せない。ここは、便利さより先に守りたい境界線です。</p>
+              <p>AIについては、まだわからないことも多く、サービスも制度も変化していきます。Smart Nurse Labでは、AIをすすめる・否定するだけで終わらず、新しい情報を確かめながら、看護師にとって安全で役立つ付き合い方を読者のみなさんと一緒に考えていきます。</p>
+            </section>
+
+            <section class="article-sources">
+              <h2>参考にした一次情報</h2>
+              <ul>
+                <li><a href="https://www.ppc.go.jp/files/pdf/230602_alert_generative_AI_service.pdf" target="_blank" rel="noopener">個人情報保護委員会「生成AIサービスの利用に関する注意喚起等について」</a></li>
+                <li><a href="https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html" target="_blank" rel="noopener">厚生労働省「医療情報システムの安全管理に関するガイドライン」</a></li>
+                <li><a href="https://openai.com/index/march-20-chatgpt-outage/" target="_blank" rel="noopener">OpenAI「March 20 ChatGPT outage: Here’s what happened」</a></li>
+                <li><a href="https://openai.com/consumer-privacy/" target="_blank" rel="noopener">OpenAI「Consumer privacy」</a></li>
+                <li><a href="https://help.openai.com/en/articles/8914046-temporary-chat-faq" target="_blank" rel="noopener">OpenAI Help Center「Temporary Chat FAQ」</a></li>
+              </ul>
+              <p class="source-note">本記事は2026年6月24日時点の情報をもとに作成しています。各サービスの仕様・規約、法令、勤務先の規程は変更される場合があります。実際の利用では最新情報をご確認ください。</p>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><p>2026 Copyright Smart Nurse Lab All Rights Reserved.</p></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
