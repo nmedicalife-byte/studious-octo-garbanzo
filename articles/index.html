@@ -8,7 +8,7 @@
       content="Smart Nurse Labの記事一覧ページです。看護師の働き方、勉強・資格、転職、夜勤、お金、メンタル、暮らしの記事を新着順に探せます。"
     />
     <title>記事一覧 | Smart Nurse Lab</title>
-    <link rel="stylesheet" href="../styles.css?v=20260625-3" />
+    <link rel="stylesheet" href="../styles.css?v=20260625-4" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -54,12 +54,12 @@
         <strong>記事カテゴリ</strong>
       </div>
       <nav class="drawer-nav" aria-label="カテゴリメニュー">
-        <a aria-disabled="true"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
-        <a aria-disabled="true"><span class="drawer-link-ja">資格・学習</span><span class="drawer-link-en">study</span></a>
-        <a aria-disabled="true"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
-        <a aria-disabled="true"><span class="drawer-link-ja">健康</span><span class="drawer-link-en">health</span></a>
-        <a aria-disabled="true"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
-        <a aria-disabled="true"><span class="drawer-link-ja">転職サービス</span><span class="drawer-link-en">career services</span></a>
+        <a href="#work"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a href="#study"><span class="drawer-link-ja">勉強・資格</span><span class="drawer-link-en">study</span></a>
+        <a href="#career"><span class="drawer-link-ja">転職</span><span class="drawer-link-en">career</span></a>
+        <a href="#mental"><span class="drawer-link-ja">メンタル</span><span class="drawer-link-en">mental</span></a>
+        <a href="#money"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
+        <a href="#life"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
       </nav>
     </aside>
 
@@ -82,6 +82,16 @@
 
       <section class="section article-index-section" id="all">
         <div class="card-grid article-grid article-index-grid">
+          <a class="article-card" id="work" href="./nurse-parental-leave-return.html" data-title="看護師 育休明け 復職 時短勤務 給与 夜勤 子の看護等休暇 育児時短就業給付" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-parental-leave-return.png" alt="育休明けの復職に向けて予定を確認する看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>育休明けの看護師が復職前に確認したいこと</h3>
+              <p>勤務形態・給与・使える制度を整理する</p>
+              <time datetime="2026-06-25">2026.6.25</time>
+            </div>
+          </a>
+
           <a class="article-card" id="study" href="./nurse-medical-fee-guide.html" data-title="看護師 診療報酬 2026 改定 DPC 入院日数 看護必要度 給与 賃上げ" data-category="勉強・資格" data-index-category="study">
             <img src="../assets/photo-nurse-medical-fee.png" alt="診療報酬に関する資料を読みながら学ぶ看護師" />
             <div class="article-body">
@@ -102,7 +112,7 @@
             </div>
           </a>
 
-          <a class="article-card" id="work" href="./travel-nurse-workstyle.html" data-title="応援ナース トラベルナース 高収入 雇用形態 契約 給与 寮 働き方" data-category="働き方" data-index-category="work">
+          <a class="article-card" href="./travel-nurse-workstyle.html" data-title="応援ナース トラベルナース 高収入 雇用形態 契約 給与 寮 働き方" data-category="働き方" data-index-category="work">
             <img src="../assets/photo-travel-nurse-hero.jpg" alt="応援ナースの契約書サンプル" />
             <div class="article-body">
               <span class="tag">働き方</span>
@@ -180,6 +190,6 @@
       <p>2026 Copyright Smart Nurse Lab All Rights Reserved.</p>
     </footer>
 
-    <script src="../script.js?v=20260625-2"></script>
+    <script src="../script.js?v=20260625-3"></script>
   </body>
 </html>
