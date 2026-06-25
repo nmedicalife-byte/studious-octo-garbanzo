@@ -68,10 +68,19 @@ function setArticleIndexFilter(filter, updateHash = true) {
     link.setAttribute("aria-current", String(isActive));
   });
 
+  let firstVisibleCard = null;
+
   articleIndexCards.forEach((card) => {
     const matches = activeFilter === "all" || card.dataset.indexCategory === activeFilter;
     card.hidden = !matches;
+    card.classList.remove("is-index-featured");
+
+    if (matches && !firstVisibleCard) {
+      firstVisibleCard = card;
+    }
   });
+
+  firstVisibleCard?.classList.add("is-index-featured");
 
   if (updateHash) {
     history.replaceState(null, "", `#${activeFilter}`);
