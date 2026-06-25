@@ -3329,4 +3329,101 @@ input {
   .wide-card img {
     height: auto;
   }
+
+  .article-index-hero {
+    gap: 10px;
+    padding: 104px 18px 18px;
+  }
+
+  .article-index-hero h1 {
+    font-size: 38px;
+  }
+
+  .article-index-hero > p:not(.eyebrow) {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .article-index-filters {
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-right: -18px;
+    margin-left: -18px;
+    padding: 4px 18px 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .article-index-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .article-index-filters a {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0 14px;
+    white-space: nowrap;
+  }
+
+  .article-index-section {
+    padding: 18px 14px 56px;
+  }
+
+  .article-index-grid {
+    gap: 12px;
+  }
+
+  .article-index-grid .article-card:not(:first-child) {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+    min-height: 122px;
+  }
+
+  .article-index-grid .article-card:not(:first-child) img {
+    width: 116px;
+    height: 100%;
+    min-height: 122px;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+
+  .article-index-grid .article-card:not(:first-child) .article-body {
+    min-width: 0;
+    padding: 12px 13px;
+  }
+
+  .article-index-grid .article-card:not(:first-child) .tag {
+    align-self: flex-start;
+    margin-bottom: 6px;
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .article-index-grid .article-card:not(:first-child) h3 {
+    display: -webkit-box;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.42;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .article-index-grid .article-card:not(:first-child) p {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .article-index-grid .article-card:not(:first-child) time {
+    padding-top: 7px;
+    font-size: 10px;
+  }
 }
