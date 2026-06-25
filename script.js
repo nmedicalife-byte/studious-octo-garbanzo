@@ -178,6 +178,26 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealTargets.forEach((target) => revealObserver.observe(target));
+
+document.querySelectorAll("[data-night-calculator]").forEach((calculator) => {
+  const hourlyInput = calculator.querySelector("[data-base-hourly]");
+  const hoursInput = calculator.querySelector("[data-night-hours]");
+  const result = calculator.querySelector("[data-night-result]");
+
+  if (!hourlyInput || !hoursInput || !result) return;
+
+  const updateNightPremium = () => {
+    const hourly = Math.max(0, Number(hourlyInput.value) || 0);
+    const hours = Math.min(7, Math.max(0, Number(hoursInput.value) || 0));
+    const premium = Math.round(hourly * 0.25 * hours);
+    result.textContent = `${premium.toLocaleString("ja-JP")}円`;
+  };
+
+  hourlyInput.addEventListener("input", updateNightPremium);
+  hoursInput.addEventListener("input", updateNightPremium);
+  updateNightPremium();
+});
+
 window.addEventListener("scroll", updateScrollEffects, { passive: true });
 window.addEventListener("hashchange", () => {
   setArticleIndexFilter(window.location.hash.replace("#", ""), false);
