@@ -1286,6 +1286,34 @@ input {
   margin: 0;
 }
 
+.consult-resource-list {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+  padding: 18px;
+  background: #f7fbfb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.consult-resource-list strong {
+  display: block;
+}
+
+.consult-resource-list a {
+  color: var(--primary-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.consult-resource-list a:hover {
+  text-decoration: underline;
+}
+
+.consultation-table {
+  min-width: 760px;
+}
+
 .stat-highlight {
   margin: 24px 0;
   padding: 22px;

@@ -42,15 +42,15 @@
     <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
       <label for="headerArticleSearch">記事を検索</label>
       <div class="search-row">
-        <input id="headerArticleSearch" type="search" placeholder="例: 夜勤、転職、新人、勉強" data-search-input />
+        <input id="headerArticleSearch" type="search" placeholder="例: インシデント、夜勤、転職、勉強" data-search-input />
         <button type="submit">検索</button>
       </div>
       <div class="keywords" aria-label="人気キーワード">
+        <button type="button" data-keyword="インシデント">インシデント</button>
+        <button type="button" data-keyword="メンタル">メンタル</button>
         <button type="button" data-keyword="給与">給与</button>
         <button type="button" data-keyword="夜勤">夜勤</button>
-        <button type="button" data-keyword="新人">新人</button>
         <button type="button" data-keyword="転職">転職</button>
-        <button type="button" data-keyword="勉強">勉強</button>
       </div>
     </form>
 
@@ -60,29 +60,29 @@
         <strong>記事カテゴリ</strong>
       </div>
       <nav class="drawer-nav" aria-label="カテゴリメニュー">
-        <a aria-disabled="true">
+        <a href="./articles/index.html#work">
           <span class="drawer-link-ja">働き方</span>
           <span class="drawer-link-en">work style</span>
         </a>
-        <a aria-disabled="true">
-          <span class="drawer-link-ja">資格・学習</span>
+        <a href="./articles/index.html#study">
+          <span class="drawer-link-ja">勉強・資格</span>
           <span class="drawer-link-en">study</span>
         </a>
-        <a aria-disabled="true">
+        <a href="./articles/index.html#career">
+          <span class="drawer-link-ja">転職</span>
+          <span class="drawer-link-en">career</span>
+        </a>
+        <a href="./articles/index.html#mental">
+          <span class="drawer-link-ja">メンタル</span>
+          <span class="drawer-link-en">mental</span>
+        </a>
+        <a href="./articles/index.html#money">
           <span class="drawer-link-ja">給与</span>
           <span class="drawer-link-en">salary</span>
         </a>
-        <a aria-disabled="true">
-          <span class="drawer-link-ja">健康</span>
-          <span class="drawer-link-en">health</span>
-        </a>
-        <a aria-disabled="true">
+        <a href="./articles/index.html#life">
           <span class="drawer-link-ja">ライフスタイル</span>
           <span class="drawer-link-en">lifestyle</span>
-        </a>
-        <a aria-disabled="true">
-          <span class="drawer-link-ja">転職サービス</span>
-          <span class="drawer-link-en">career services</span>
         </a>
       </nav>
     </aside>
@@ -168,6 +168,14 @@
           <h2>新着記事</h2>
         </div>
         <div class="featured-list">
+          <a class="wide-card" href="./articles/nurse-incident-mental-care.html" data-title="看護師 インシデント ヒヤリハット ミス メンタル セカンドビクティム 医療安全 相談" data-category="メンタル">
+            <img src="./assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
+            <div>
+              <span class="tag">メンタル</span>
+              <h3>ミスをした看護師が自分を責め続けないために</h3>
+              <p>インシデント後の向き合い方</p>
+            </div>
+          </a>
           <a class="wide-card" href="./articles/nurse-income-up-priority.html" data-title="看護師 収入アップ 給与 転職 副業 資格 優先順位" data-category="給与">
             <img src="./assets/photo-nurse-income-priority.png" alt="転職活動に向かう看護師" />
             <div>
@@ -182,14 +190,6 @@
               <span class="tag">勉強・資格</span>
               <h3>看護師も知っておきたい診療報酬</h3>
               <p>全部ではなく、まず見るべきところ</p>
-            </div>
-          </a>
-          <a class="wide-card" href="./articles/nurse-generative-ai-guide.html" data-title="看護師 生成AI ChatGPT 患者情報 個人情報 創傷写真 勉強 安全" data-category="勉強・資格">
-            <img src="./assets/photo-nurse-generative-ai.png" alt="生成AIを使いながらノートで勉強する看護師" />
-            <div>
-              <span class="tag">勉強・資格</span>
-              <h3>看護師は生成AIをどう使う？</h3>
-              <p>仕事と勉強に生かす方法、入力してはいけない情報</p>
             </div>
           </a>
         </div>
