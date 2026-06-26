@@ -2642,6 +2642,54 @@ input {
   color: var(--muted);
 }
 
+.fit-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.fit-compare > div {
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.fit-compare strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--primary-dark);
+  font-size: 15px;
+}
+
+.fit-compare ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fit-compare li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.fit-compare li::before {
+  content: "";
+  position: absolute;
+  top: 0.82em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
 .community-rings > div {
   min-height: 148px;
   background: linear-gradient(135deg, rgba(26, 166, 167, 0.08), rgba(242, 184, 75, 0.08));
@@ -3241,6 +3289,7 @@ input {
   .relationship-map,
   .community-rings,
   .decision-checklist,
+  .fit-compare,
   .travel-point-grid,
   .salary-reason-list,
   .workstyle-shift,
