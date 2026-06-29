@@ -1261,6 +1261,14 @@ input {
   margin: 0 0 18px;
 }
 
+.article-inline-image {
+  width: 100%;
+  margin: 18px 0 22px;
+  border: 1px solid rgba(26, 166, 167, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(9, 88, 92, 0.08);
+}
+
 .article-content ul,
 .article-content ol {
   display: grid;
