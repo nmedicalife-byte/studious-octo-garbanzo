@@ -1793,6 +1793,57 @@ input {
   font-size: 13px;
 }
 
+.article-reference-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  margin: 18px 0 24px;
+  padding: 14px 16px;
+  border: 1px solid rgba(26, 166, 167, 0.2);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  background: #f4fbfa;
+}
+
+.article-reference-links span {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.article-reference-links a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  color: var(--primary-dark);
+  background: var(--white);
+  border: 1px solid rgba(26, 166, 167, 0.24);
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(9, 88, 92, 0.06);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.article-reference-links a::after {
+  content: "↗";
+  font-size: 12px;
+  line-height: 1;
+}
+
+.article-reference-links a:hover {
+  border-color: rgba(26, 166, 167, 0.5);
+  transform: translateY(-1px);
+}
+
 .ai-boundary-grid,
 .ai-decision-grid,
 .ai-use-grid {
