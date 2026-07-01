@@ -1269,6 +1269,24 @@ input {
   box-shadow: 0 10px 26px rgba(9, 88, 92, 0.08);
 }
 
+.article-visual {
+  margin: 26px 0 30px;
+}
+
+.article-visual img {
+  width: 100%;
+  border: 1px solid rgba(26, 166, 167, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 14px 32px rgba(9, 88, 92, 0.1);
+}
+
+.article-visual figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .article-content ul,
 .article-content ol {
   display: grid;
@@ -1842,6 +1860,96 @@ input {
 .article-reference-links a:hover {
   border-color: rgba(26, 166, 167, 0.5);
   transform: translateY(-1px);
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0 20px;
+}
+
+.resource-cards a {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  min-height: 210px;
+  padding: 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 251, 251, 0.92)),
+    var(--white);
+  border: 1px solid rgba(26, 166, 167, 0.2);
+  border-left: 6px solid var(--primary);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(9, 88, 92, 0.07);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.resource-cards a:hover {
+  border-color: rgba(26, 166, 167, 0.48);
+  transform: translateY(-2px);
+}
+
+.resource-cards span {
+  width: fit-content;
+  padding: 5px 9px;
+  color: var(--primary-dark);
+  background: #e9f8f7;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.resource-cards strong {
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.resource-cards p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.resource-cards .resource-card-island {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(239, 249, 244, 0.95)),
+    var(--white);
+  border-color: rgba(54, 157, 112, 0.24);
+  border-left-color: #369d70;
+}
+
+.resource-cards .resource-card-island span {
+  color: #216d4c;
+  background: #e6f6ed;
+}
+
+.resource-cards .resource-card-private {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 247, 230, 0.96)),
+    var(--white);
+  border-color: rgba(242, 184, 75, 0.34);
+  border-left-color: var(--accent);
+}
+
+.resource-cards .resource-card-private span {
+  color: #8a5b07;
+  background: #fff1cc;
+}
+
+.resource-cards .resource-card-public {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(238, 247, 255, 0.96)),
+    var(--white);
+  border-color: rgba(83, 136, 198, 0.28);
+  border-left-color: #5388c6;
+}
+
+.resource-cards .resource-card-public span {
+  color: #2f5d91;
+  background: #e8f1fb;
 }
 
 .foreign-worker-chart {
@@ -3743,7 +3851,8 @@ input {
   .travel-point-grid,
   .salary-reason-list,
   .workstyle-shift,
-  .contract-check-grid {
+  .contract-check-grid,
+  .resource-cards {
     grid-template-columns: 1fr;
   }
 
