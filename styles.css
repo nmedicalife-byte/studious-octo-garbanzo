@@ -1948,6 +1948,130 @@ input {
   min-width: 330px;
 }
 
+.bonus-chart-block {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  margin: 26px 0;
+  padding: 22px;
+  background: linear-gradient(135deg, #f7fbfb, #ffffff);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(9, 88, 92, 0.08);
+}
+
+.bonus-pie {
+  position: relative;
+  width: min(220px, 100%);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  background: conic-gradient(
+    #68b684 0deg 144deg,
+    #5b89d6 144deg 216deg,
+    #f2b84b 216deg 270deg,
+    #8c7bd9 270deg 306deg,
+    #ef7f72 306deg 360deg
+  );
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(9, 88, 92, 0.08), 0 16px 32px rgba(9, 88, 92, 0.1);
+}
+
+.bonus-pie::after {
+  position: absolute;
+  inset: 54px;
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.45;
+  text-align: center;
+  content: "割合で先に分ける";
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(9, 88, 92, 0.08);
+}
+
+.bonus-legend {
+  display: grid;
+  gap: 8px;
+}
+
+.bonus-legend div {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.bonus-legend div:last-child {
+  border-bottom: 0;
+}
+
+.bonus-legend span {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.bonus-legend strong {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.bonus-legend b {
+  color: var(--primary-dark);
+  font-size: 14px;
+}
+
+.bonus-case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.bonus-case-grid > div {
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.bonus-case-grid strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.bonus-case-grid span {
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .bonus-chart-block,
+  .bonus-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-chart-block {
+    padding: 18px;
+  }
+
+  .bonus-pie {
+    width: min(220px, 72vw);
+  }
+
+  .bonus-pie::after {
+    inset: 24%;
+    font-size: 13px;
+  }
+}
+
 .table-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
