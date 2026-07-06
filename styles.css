@@ -3510,9 +3510,36 @@ input {
   font-weight: 900;
 }
 
+.reason-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(26, 166, 167, 0.07), rgba(239, 127, 114, 0.1));
+  border: 1px solid rgba(26, 166, 167, 0.18);
+  border-radius: 8px;
+}
+
+.reason-cloud span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 12px;
+  color: var(--primary-dark);
+  background: var(--white);
+  border: 1px solid rgba(26, 166, 167, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(9, 88, 92, 0.06);
+  font-size: 13px;
+  font-weight: 900;
+}
+
 .study-split,
 .overseas-route-grid,
-.overseas-flow {
+.overseas-flow,
+.career-job-grid,
+.merit-caution-grid {
   display: grid;
   gap: 14px;
   margin: 24px 0;
@@ -3531,14 +3558,38 @@ input {
   counter-reset: overseas-flow;
 }
 
+.career-job-grid,
+.merit-caution-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .study-split > div,
 .overseas-route-grid > div,
-.overseas-flow > div {
+.overseas-flow > div,
+.career-job-grid > div,
+.merit-caution-grid > div {
   padding: 18px;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.career-job-grid > div {
+  border-top: 5px solid rgba(26, 166, 167, 0.72);
+}
+
+.career-job-grid > div:nth-child(2),
+.career-job-grid > div:nth-child(4) {
+  border-top-color: rgba(242, 184, 75, 0.86);
+}
+
+.merit-caution-grid > div:first-child {
+  border-top: 5px solid var(--primary);
+}
+
+.merit-caution-grid > div:last-child {
+  border-top: 5px solid var(--coral);
 }
 
 .study-split > div:first-child {
@@ -3550,7 +3601,8 @@ input {
 }
 
 .study-split span,
-.overseas-flow span {
+.overseas-flow span,
+.career-job-grid span {
   display: inline-flex;
   margin-bottom: 8px;
   padding: 4px 9px;
@@ -3563,7 +3615,9 @@ input {
 
 .study-split strong,
 .overseas-route-grid strong,
-.overseas-flow strong {
+.overseas-flow strong,
+.career-job-grid strong,
+.merit-caution-grid strong {
   display: block;
   margin-bottom: 6px;
   color: var(--ink);
@@ -3571,9 +3625,15 @@ input {
 
 .study-split p,
 .overseas-route-grid span,
-.overseas-flow p {
+.overseas-flow p,
+.career-job-grid p {
   margin: 0;
   color: var(--muted);
+}
+
+.merit-caution-grid ul {
+  margin: 10px 0 0;
+  padding-left: 1.2em;
 }
 
 .overseas-route-grid > div {
@@ -4293,6 +4353,8 @@ input {
   .community-rings,
   .decision-checklist,
   .fit-compare,
+  .career-job-grid,
+  .merit-caution-grid,
   .travel-point-grid,
   .salary-reason-list,
   .workstyle-shift,
@@ -4615,15 +4677,19 @@ input {
 
   .study-split,
   .overseas-route-grid,
-  .overseas-flow {
+  .overseas-flow,
+  .career-job-grid,
+  .merit-caution-grid {
     grid-template-columns: 1fr;
   }
 
-  .purpose-cloud {
+  .purpose-cloud,
+  .reason-cloud {
     padding: 16px;
   }
 
-  .purpose-cloud span {
+  .purpose-cloud span,
+  .reason-cloud span {
     font-size: 12px;
   }
 }
