@@ -1944,6 +1944,84 @@ input {
   background: rgba(247, 251, 251, 0.7);
 }
 
+.salary-simulator {
+  display: grid;
+  gap: 18px;
+  margin: 26px 0;
+  padding: 22px;
+  border: 1px solid rgba(9, 88, 92, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f7fbfb, #fffdf9);
+  box-shadow: 0 18px 42px rgba(9, 88, 92, 0.1);
+}
+
+.simulator-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.simulator-fields label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.simulator-fields span {
+  font-size: 13px;
+}
+
+.simulator-fields input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid rgba(78, 106, 102, 0.25);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 800;
+}
+
+.simulator-fields input:focus {
+  outline: 3px solid rgba(26, 154, 160, 0.18);
+  border-color: rgba(26, 154, 160, 0.65);
+}
+
+.simulator-result {
+  padding: 18px;
+  border-radius: 8px;
+  background: var(--primary-dark);
+  color: var(--white);
+}
+
+.simulator-result span {
+  display: block;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.simulator-result strong {
+  display: block;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.15;
+}
+
+.simulator-result p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.simulator-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 .compact-table {
   min-width: 330px;
 }
@@ -4330,6 +4408,14 @@ input {
   .payslip-scroll {
     width: 100%;
     max-width: calc(100vw - 36px);
+  }
+
+  .salary-simulator {
+    padding: 18px;
+  }
+
+  .simulator-fields {
+    grid-template-columns: 1fr;
   }
 
   .career-stat-row,

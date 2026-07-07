@@ -11,6 +11,7 @@ const headerSearchInput = document.querySelector("#headerArticleSearch");
 const articleIndexFilters = document.querySelectorAll("[data-filter]");
 const articleIndexCards = document.querySelectorAll("[data-index-category]");
 const progress = document.querySelector(".scroll-progress");
+const bachelorSimulator = document.querySelector("[data-bachelor-simulator]");
 const revealTargets = document.querySelectorAll(
   ".quick-links a, .section-heading, .article-card, .wide-card, .category-grid a, .career-list a, .section-action"
 );
@@ -178,6 +179,45 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealTargets.forEach((target) => revealObserver.observe(target));
+
+if (bachelorSimulator) {
+  const costInput = bachelorSimulator.querySelector("[data-sim-cost]");
+  const monthlyInput = bachelorSimulator.querySelector("[data-sim-monthly]");
+  const bonusInput = bachelorSimulator.querySelector("[data-sim-bonus]");
+  const lossInput = bachelorSimulator.querySelector("[data-sim-loss]");
+  const result = bachelorSimulator.querySelector("[data-sim-result]");
+  const detail = bachelorSimulator.querySelector("[data-sim-detail]");
+  const formatter = new Intl.NumberFormat("ja-JP");
+
+  function getNumber(input) {
+    return Math.max(Number(input.value) || 0, 0);
+  }
+
+  function updateBachelorSimulator() {
+    const cost = getNumber(costInput);
+    const monthlyIncrease = getNumber(monthlyInput);
+    const bonusIncrease = getNumber(bonusInput);
+    const incomeLoss = getNumber(lossInput);
+    const annualIncrease = monthlyIncrease * 12 + bonusIncrease - incomeLoss;
+
+    if (annualIncrease <= 0) {
+      result.textContent = "給与だけでは回収できません";
+      detail.textContent = `年間の収入増は${formatter.format(annualIncrease)}円です。キャリア価値も含めて考えましょう。`;
+      return;
+    }
+
+    const years = cost / annualIncrease;
+    result.textContent = `約${years.toFixed(1)}年`;
+    detail.textContent = `年間の収入増は${formatter.format(annualIncrease)}円です。`;
+  }
+
+  [costInput, monthlyInput, bonusInput, lossInput].forEach((input) => {
+    input.addEventListener("input", updateBachelorSimulator);
+  });
+
+  updateBachelorSimulator();
+}
+
 window.addEventListener("scroll", updateScrollEffects, { passive: true });
 window.addEventListener("hashchange", () => {
   setArticleIndexFilter(window.location.hash.replace("#", ""), false);
