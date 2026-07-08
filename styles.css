@@ -2827,6 +2827,183 @@ input {
   border-radius: inherit;
 }
 
+.demand-outlook {
+  margin: 26px 0;
+  padding: 22px;
+  background: linear-gradient(135deg, #f7fbfb, #fffdf9);
+  border: 1px solid rgba(26, 166, 167, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 14px 32px rgba(9, 88, 92, 0.08);
+}
+
+.demand-outlook-head {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.demand-outlook-head strong {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.demand-outlook-head span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.demand-outlook-line {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.demand-outlook-line::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 12%;
+  left: 12%;
+  height: 3px;
+  background: rgba(26, 166, 167, 0.22);
+}
+
+.demand-point {
+  position: relative;
+  padding-top: 54px;
+}
+
+.demand-point::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  background: var(--primary);
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(9, 88, 92, 0.18);
+  transform: translateX(-50%);
+}
+
+.demand-point > div {
+  min-height: 148px;
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.demand-point span {
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.demand-point strong {
+  display: block;
+  margin: 6px 0 8px;
+}
+
+.demand-point p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.demand-outlook-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.job-history-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0;
+}
+
+.job-history-flow > div {
+  position: relative;
+  min-height: 118px;
+  padding: 18px;
+  background: #f7fbfb;
+  border: 1px solid rgba(26, 166, 167, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.job-history-flow > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 18px;
+  height: 2px;
+  background: rgba(26, 166, 167, 0.55);
+}
+
+.job-history-flow span,
+.market-lens span,
+.career-phrase-box span {
+  color: var(--primary-dark);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.job-history-flow strong {
+  display: block;
+  margin: 8px 0 6px;
+}
+
+.job-history-flow p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.market-lens,
+.career-phrase-box {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.market-lens {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.market-lens > div,
+.career-phrase-box > div {
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(9, 88, 92, 0.06);
+}
+
+.market-lens strong,
+.career-phrase-box strong {
+  display: block;
+  margin: 6px 0 8px;
+}
+
+.market-lens p,
+.career-phrase-box p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .career-map-grid,
 .workplace-index,
 .career-value-list {
@@ -4777,5 +4954,57 @@ input {
   .purpose-cloud span,
   .reason-cloud span {
     font-size: 12px;
+  }
+
+  .job-history-flow,
+  .market-lens,
+  .demand-outlook-line {
+    grid-template-columns: 1fr;
+  }
+
+  .job-history-flow > div {
+    min-height: auto;
+  }
+
+  .job-history-flow > div:not(:last-child)::after {
+    top: auto;
+    right: auto;
+    bottom: -9px;
+    left: 24px;
+    width: 2px;
+    height: 18px;
+  }
+
+  .demand-outlook {
+    padding: 18px;
+  }
+
+  .demand-outlook-head {
+    display: grid;
+    gap: 4px;
+  }
+
+  .demand-outlook-line::before {
+    top: 28px;
+    right: auto;
+    bottom: 28px;
+    left: 11px;
+    width: 3px;
+    height: auto;
+  }
+
+  .demand-point {
+    padding-top: 0;
+    padding-left: 34px;
+  }
+
+  .demand-point::before {
+    top: 12px;
+    left: 0;
+    transform: none;
+  }
+
+  .demand-point > div {
+    min-height: auto;
   }
 }
