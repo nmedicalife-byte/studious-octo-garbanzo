@@ -1129,6 +1129,25 @@ input {
   margin: 0;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primary-dark);
+}
+
 .article-page {
   max-width: 100%;
   overflow-x: hidden;
