@@ -38,6 +38,112 @@ function setHeaderSearch(open) {
   }
 }
 
+function normalizeSearchText(text) {
+  return String(text || "").trim().toLowerCase();
+}
+
+function getArticlesIndexPath() {
+  return window.location.pathname.includes("/articles/")
+    ? "./index.html"
+    : "./articles/index.html";
+}
+
+function getArticleHref(href) {
+  if (!href) {
+    return "";
+  }
+
+  if (href.startsWith("http")) {
+    return href;
+  }
+
+  if (href.startsWith("./")) {
+    return window.location.pathname.includes("/articles/")
+      ? href
+      : `./articles/${href.slice(2)}`;
+  }
+
+  return href;
+}
+
+function getCardSearchText(card) {
+  return normalizeSearchText(
+    [
+      card.dataset.title,
+      card.dataset.category,
+      card.textContent
+    ].join(" ")
+  );
+}
+
+function scoreSearchResult(card, terms) {
+  const searchText = getCardSearchText(card);
+  const titleText = normalizeSearchText(card.dataset.title);
+  const categoryText = normalizeSearchText(card.dataset.category);
+
+  return terms.reduce((score, term) => {
+    if (!term) {
+      return score;
+    }
+
+    if (titleText.includes(term)) {
+      score += 5;
+    }
+
+    if (categoryText.includes(term)) {
+      score += 3;
+    }
+
+    if (searchText.includes(term)) {
+      score += 1;
+    }
+
+    return score;
+  }, 0);
+}
+
+async function getSearchableArticleCards() {
+  if (articleIndexCards.length) {
+    return Array.from(articleIndexCards);
+  }
+
+  try {
+    const response = await fetch(getArticlesIndexPath());
+    const html = await response.text();
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    return Array.from(doc.querySelectorAll("[data-title]"));
+  } catch (error) {
+    return Array.from(searchableCards);
+  }
+}
+
+async function navigateToSearchResult(term) {
+  const searchTerm = normalizeSearchText(term);
+
+  if (!searchTerm) {
+    window.location.href = getArticlesIndexPath();
+    return;
+  }
+
+  const terms = searchTerm.split(/\s+/).filter(Boolean);
+  const cards = await getSearchableArticleCards();
+  const bestMatch = cards
+    .map((card) => ({
+      card,
+      score: scoreSearchResult(card, terms)
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)[0];
+
+  if (bestMatch) {
+    const href = bestMatch.card.getAttribute("href");
+    window.location.href = getArticleHref(href);
+    return;
+  }
+
+  window.location.href = `${getArticlesIndexPath()}?q=${encodeURIComponent(searchTerm)}`;
+}
+
 function filterArticles(term) {
   searchableCards.forEach((card) => {
     card.hidden = false;
@@ -132,6 +238,7 @@ searchForms.forEach((form) => {
     event.preventDefault();
     const input = form.querySelector("[data-search-input]");
     runSearch(input.value);
+    navigateToSearchResult(input.value);
   });
 });
 
@@ -144,6 +251,7 @@ searchInputs.forEach((input) => {
 keywordButtons.forEach((button) => {
   button.addEventListener("click", () => {
     runSearch(button.dataset.keyword);
+    navigateToSearchResult(button.dataset.keyword);
   });
 });
 
