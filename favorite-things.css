@@ -192,19 +192,14 @@
   }
 
   .favorite-grid p {
-    display: -webkit-box;
     margin-bottom: 12px;
-    overflow: hidden;
     font-size: 11px;
     line-height: 1.65;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
   }
 
   .favorite-grid p.product-note {
     margin-top: -3px;
     font-size: 9px;
-    -webkit-line-clamp: 4;
   }
 
   .favorite-grid a.product-cta {
