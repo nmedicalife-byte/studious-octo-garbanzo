@@ -31,4 +31,185 @@
 .favorite-grid article > img.product-cover-image { padding: 14px; object-fit: contain; background: #f5f0dc; }
 .favorite-grid p.product-note { margin-top: -8px; font-size: 11px; line-height: 1.65; }
 @media (max-width: 900px) { .favorites-hero { grid-template-columns: 1fr; }.favorite-category-nav { grid-template-columns: repeat(3, 1fr); }.favorites-hero-visual, .favorites-hero-visual img { min-height: 520px; }.favorite-grid { grid-template-columns: 1fr; }.favorite-grid article { min-height: auto; } }
-@media (max-width: 600px) { .favorites-hero h1 { font-size: clamp(27px, 8.5vw, 34px); line-height: 1.32; letter-spacing: -.03em; }.favorite-category-nav { grid-template-columns: repeat(2, 1fr); gap: 9px; }.favorite-category-nav a { min-height: 108px; padding: 14px 8px; }.favorite-category-nav img { width: 40px; height: 40px; }.favorites-hero-visual, .favorites-hero-visual img { min-height: 430px; }.favorites-hero-visual figcaption { right: 20px; bottom: 20px; left: 20px; }.favorites-hero-visual figcaption strong { max-width: 180px; font-size: 14px; text-align: right; }.favorite-category { border-radius: 16px; }.favorite-category header small { font-size: 12px; } }
+@media (max-width: 600px) {
+  .favorites-hero {
+    min-height: 0;
+  }
+
+  .favorites-hero-copy {
+    padding: 44px 22px 40px;
+  }
+
+  .favorites-eyebrow {
+    margin-bottom: 14px;
+    font-size: 10px;
+    letter-spacing: .11em;
+  }
+
+  .favorites-hero h1 {
+    margin-bottom: 20px;
+    font-size: clamp(27px, 8.2vw, 32px);
+    line-height: 1.38;
+    letter-spacing: -.035em;
+  }
+
+  .favorites-hero-copy > p:not(.favorites-eyebrow) {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .favorites-hero-visual,
+  .favorites-hero-visual img {
+    min-height: 340px;
+    height: 340px;
+  }
+
+  .favorites-hero-visual img {
+    object-position: 50% center;
+  }
+
+  .favorites-hero-visual figcaption {
+    right: 20px;
+    bottom: 18px;
+    left: 20px;
+  }
+
+  .favorites-hero-visual figcaption span {
+    font-size: 9px;
+  }
+
+  .favorites-hero-visual figcaption strong {
+    max-width: 180px;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .favorites-list {
+    padding: 52px 0 72px;
+  }
+
+  .favorites-section-heading {
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  .favorite-category-nav {
+    display: flex;
+    gap: 9px;
+    margin: 0;
+    padding: 0 20px 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .favorite-category-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .favorite-category-nav a {
+    flex: 0 0 auto;
+    min-height: 46px;
+    padding: 10px 15px;
+    flex-direction: row;
+    gap: 8px;
+    border-radius: 999px;
+    box-shadow: none;
+    scroll-snap-align: start;
+  }
+
+  .favorite-category-nav img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .favorite-category-nav span {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .favorites-section-heading h2,
+  .favorites-section-heading > p:last-child {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .favorites-section-heading h2 {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    font-size: 29px;
+    line-height: 1.42;
+  }
+
+  .affiliate-intro {
+    font-size: 12px;
+    line-height: 1.85;
+  }
+
+  .favorite-category {
+    margin: 0 12px 18px;
+    padding: 26px 10px 10px;
+    border-radius: 18px;
+  }
+
+  .favorite-category > header {
+    margin-bottom: 22px;
+    padding: 0 10px;
+  }
+
+  .favorite-category header small {
+    font-size: 11px;
+    letter-spacing: .08em;
+  }
+
+  .favorite-category header h2 {
+    margin-top: 8px;
+    font-size: 23px;
+    line-height: 1.48;
+  }
+
+  .favorite-grid {
+    gap: 10px;
+  }
+
+  .favorite-grid article {
+    padding: 18px;
+    border-radius: 13px;
+  }
+
+  .favorite-grid article > img {
+    width: calc(100% + 36px);
+    margin: -18px -18px 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .favorite-grid article > img.product-cover-image {
+    padding: 20px;
+  }
+
+  .favorite-grid h3 {
+    margin: 19px 0 8px;
+    font-size: 19px;
+    line-height: 1.48;
+  }
+
+  .favorite-grid p {
+    margin-bottom: 17px;
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .favorite-grid p.product-note {
+    margin-top: -5px;
+    font-size: 10px;
+  }
+
+  .favorite-grid a.product-cta {
+    min-height: 48px;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
