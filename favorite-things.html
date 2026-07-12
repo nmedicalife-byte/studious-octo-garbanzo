@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ナースグッズから日常生活まで。Smart Nurse Labが、看護師の仕事と暮らしを少し軽くするおすすめアイテムを紹介します。" />
+    <title>Smart Nurse Labのおすすめアイテム｜ナースグッズから日常生活まで</title>
+    <link rel="stylesheet" href="./styles.css?v=20260711-1" />
+    <link rel="stylesheet" href="./favorite-things.css?v=20260712-9" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="./index.html" aria-label="Smart Nurse Lab トップページ">
+        <span class="logo-mark" aria-hidden="true"><span class="logo-cross"></span><span class="logo-pulse"></span><span class="logo-dot logo-dot-a"></span><span class="logo-dot logo-dot-b"></span></span>
+        <span><strong>Smart Nurse Lab</strong></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-favorites is-current" href="./favorite-things.html" aria-label="おすすめアイテムページ" aria-current="page">
+          <span class="favorites-icon" aria-hidden="true"></span>
+          <span class="favorites-text">ITEMS</span>
+        </a>
+        <button class="header-search" type="button" aria-expanded="false" aria-controls="headerSearchPanel" aria-label="検索パネルを開く"><span class="search-icon" aria-hidden="true"></span></button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く"><span class="menu-icon" aria-hidden="true"><span></span><span></span></span><span class="menu-text">MENU</span></button>
+      </div>
+    </header>
+
+    <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
+      <label for="headerArticleSearch">記事を検索</label>
+      <div class="search-row"><input id="headerArticleSearch" type="search" placeholder="例: スクラブ、夜勤、転職、勉強" data-search-input /><button type="submit">検索</button></div>
+      <div class="keywords" aria-label="人気キーワード"><button type="button" data-keyword="スクラブ">スクラブ</button><button type="button" data-keyword="夜勤">夜勤</button><button type="button" data-keyword="転職">転職</button></div>
+    </form>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-heading"><span>Category</span><strong>記事カテゴリ</strong></div>
+      <nav class="drawer-nav" aria-label="カテゴリメニュー">
+        <a href="./articles/index.html#work"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a href="./articles/index.html#study"><span class="drawer-link-ja">勉強・資格</span><span class="drawer-link-en">study</span></a>
+        <a href="./articles/index.html#career"><span class="drawer-link-ja">転職</span><span class="drawer-link-en">career</span></a>
+        <a href="./articles/index.html#life"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
+        <a href="./favorite-things.html" aria-current="page"><span class="drawer-link-ja">おすすめアイテム</span><span class="drawer-link-en">favorite things</span></a>
+      </nav>
+    </aside>
+
+    <main class="favorites-page">
+      <section class="favorites-hero">
+        <div class="favorites-hero-copy">
+          <p class="favorites-eyebrow">Smart Nurse Lab / Favorite things</p>
+          <h1><span>看護師の仕事を、</span><span>もっとスムーズに。</span><span>暮らしは、豊かに。</span></h1>
+          <p>ナースグッズから日常生活用品まで。看護師の仕事と暮らしを豊かにしてくれるアイテムを、Smart Nurse Labの視点で集めました。</p>
+        </div>
+        <figure class="favorites-hero-visual">
+          <img src="./assets/favorite-things-hero-tokyo.png" alt="黒いスクラブを着て、東京の自宅でくつろぐ看護師" />
+          <figcaption><span>WORK &amp; LIFE</span><strong>仕事も、暮らしも、自分らしく。</strong></figcaption>
+        </figure>
+      </section>
+
+      <section class="favorites-list" id="favoriteCategories">
+        <div class="favorites-section-heading">
+          <nav class="favorite-category-nav" aria-label="おすすめアイテムのカテゴリ">
+            <a href="#nurseGoods"><img src="./assets/icon-tools.svg" alt="" /><span>ナースグッズ</span></a>
+            <a href="#nightGoods"><img src="./assets/icon-night.svg" alt="" /><span>夜勤</span></a>
+            <a href="#travelGoods"><img src="./assets/icon-career.svg" alt="" /><span>旅行・引っ越し</span></a>
+            <a href="#studyGoods"><img src="./assets/icon-study.svg" alt="" /><span>学び</span></a>
+            <a href="#lifeGoods"><img src="./assets/icon-life.svg" alt="" /><span>健康・暮らし</span></a>
+          </nav>
+          <h2>今のあなたに必要なもの</h2>
+          <p class="affiliate-intro">このページにはアフィリエイトリンクが含まれる場合があります。リンク先で購入された場合、Smart Nurse Labが紹介料を受け取ることがありますが、購入価格に追加費用はかかりません。掲載するのは、看護師の仕事と暮らしに本当に役立つと考えたものだけです。</p>
+        </div>
+
+        <section class="favorite-category category-work" id="nurseGoods">
+          <header><div><small>ナースグッズ</small><h2>生産性を上げる、ナースグッズ・白衣・シューズ</h2></div></header>
+          <div class="favorite-grid">
+            <article class="product-card product-card-featured"><img src="./assets/favorite-figs-black-scrubs-v2.png" alt="黒いスクラブと白いシューズの全身コーディネートで院内を歩く看護師" /><h3>FIGSのスクラブ</h3><p>アメリカ発の医療用ウェア。動きやすさと洗練されたデザインを両立し、長時間勤務でも疲れにくい着心地が魅力です。</p><a class="product-cta" href="https://www.wearfigs.com/pages/friend?referralCode=rui74738&amp;fbuy_ref_code=rui74738" target="_blank" rel="sponsored noopener">FIGS公式HPを見る <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-nursery-2way-shoes.png" alt="白い2Wayナースシューズ" /><h3>ナースリー デイリーシューズ 定番2Way</h3><p>かかとを踏んでも履ける2Way仕様と、ゆったりした幅広4E。脱ぎ履きが多い現場でも使いやすい、定番のナースシューズです。</p><div class="product-actions"><a class="product-cta product-cta-secondary" href="https://www.nursery.co.jp/products/detail/13325" target="_blank" rel="noopener">ナースリー公式を見る <span>↗</span></a><a class="product-cta" href="https://www.amazon.co.jp/%E3%83%8A%E3%83%BC%E3%82%B9%E3%83%AA%E3%83%BC-%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA%E5%AE%9A%E7%95%AA2Way-%E3%83%8A%E3%83%BC%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-%E5%B9%85%E5%BA%834E-%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9/dp/B081DTHKVT?th=1&amp;psc=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=a970096d8f1d40b3cc6a52bef28c1266&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></div></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-prairie-digital-card.png" alt="黒いスクラブを着た看護師がデジタル名刺をスマートフォンへかざす様子" /><h3>Prairie Cardのデジタル名刺</h3><p>スマホにかざすだけで、連絡先・SNS・経歴をまとめて共有。応援ナースや訪問看護、転職などで仕事のつながりが広がる看護師に便利な一枚です。</p><a class="product-cta" href="https://my.prairie.cards/fd/65dade45-9152-4918-80e9-abb42152d844?cp=t" target="_blank" rel="sponsored noopener">Prairie Cardを見る <span>↗</span></a></article>
+          </div>
+        </section>
+
+        <section class="favorite-category category-night" id="nightGoods">
+          <header><div><small>夜勤</small><h2>夜勤を快適に、少しラクにしてくれるもの</h2></div></header>
+          <div class="favorite-grid">
+            <article class="product-card product-card-featured"><img src="./assets/favorite-night-steam-eye-mask.png" alt="夜勤の短い休憩に蒸気アイマスクで目元を温める看護師" /><h3>めぐりズム 蒸気めぐるアイマスク 無香料</h3><p>約40℃の蒸気が目元をやさしく包む、使い切りタイプ。まとまった仮眠が難しい夜勤でも、短い休憩で気持ちを切り替えたいときに。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%82%81%E3%81%90%E3%82%8A%E3%82%BA%E3%83%A0-%E8%92%B8%E6%B0%97%E3%82%81%E3%81%90%E3%82%8B%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF-%E7%84%A1%E9%A6%99%E6%96%99-16%E6%9E%9A%E5%85%A5%E3%80%90%E5%A4%A7%E5%AE%B9%E9%87%8F%E3%80%91%E3%80%90Amazon-co-jp%E9%99%90%E5%AE%9A%E3%80%91/dp/B0FKB678DY?crid=2J97ZLDJS80U2&amp;dib=eyJ2IjoiMSJ9.jlM62VLh1PnjyeshzVuxkffHzJc7ys1p1ZCG2vpwXFqFSS-3EXQxjbwlO9ROie6bc4DJ6nDOL4adTlR5bfnD5rHt-oLfbvx5bAJOLblNeykBXsxyCuH0hj9Tekoi0ob98uIsKzt4Z1Txc4etqc_7_O7758uTI9_15aHWCAwNBXrZY7iQPaM0X3RjEAyq_K47U9Bb0Nugytu1rrPYC3Hu0NBNFUmyxxShI85k0Z9gWq7dTqylTXyYuxeNVBqrcYwXHoaXVKvHGA5fP31U_-iPeFNgSnZAIPulr3Y_vpD7mWI.ypoZ16MrT4MVtB6yijtQVXIa3aLPVh3EisZCEinGtNo&amp;dib_tag=se&amp;keywords=%E8%92%B8%E6%B0%97%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%82%A2%E3%82%A4%E3%83%9E%E3%82%B9%E3%82%AF&amp;qid=1783826223&amp;sprefix=%E3%81%98%E3%82%87%E3%81%86%E3%81%8D%E3%81%A7%2Caps%2C435&amp;sr=8-6&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=834d71aabab613916cabb8e30a20d9fc&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-night-insulated-tumbler.png" alt="夜勤の休憩室に置かれたフタ付きの真空断熱タンブラー" /><h3>サーモス 真空断熱タンブラー（フタ付き）</h3><p>温かい飲み物にも冷たい飲み物にも使え、飲み頃を保ちやすいフタ付きタイプ。自宅から持参すれば、自販機で買う回数を減らす節約にも。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%80%90Amazon-co-jp-%E9%99%90%E5%AE%9A%E3%80%91%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B9-%E7%9C%9F%E7%A9%BA%E6%96%AD%E7%86%B1%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC-JDP-401-BE/dp/B0CCRN7C2V?crid=1JYFXYDJ7B0D2&amp;dib=eyJ2IjoiMSJ9.qXJZSY1PhAJfZXVTFAswfXGQl7m9c79ahy5JDlDeZNmee81gpuBVXhTI8Z4qTyLAzF4ywm_T6sxYDwkS0OoCwe6S7sTaCjPayrJt8QiOdZxJ_uPWD8KHYrkbQ2iBtD2z4KSWkwJdf-4z2Bpuc3LYICar6s4qHAvqU233VcxtBJSLQ0xI8XNzxnESoqS-uJN2CY-9r1Vp0G3cDOaIy0czyCv7p-R2bDlGni_0Ad9w10SwbE9RL0YW8uEpc2ymf9AG3B5qm_nLe54QM-bNILlgaXoMG9GX2XC0LH7bR9ckJoA.rH0bbnf56dtFRWUUek7BqMy15Z_D1-4lZKCvoDDtzOQ&amp;dib_tag=se&amp;keywords=%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC%2B%E8%93%8B%E4%BB%98%E3%81%8D&amp;qid=1783826347&amp;sprefix=%E3%82%BF%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC%2Caps%2C381&amp;sr=8-1-spons&amp;ufe=app_do%3Aamzn1.fos.bf59e452-7c16-4eb0-8b6f-4f4edb3d8c50&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=b94c3e568b20d0f4f5cb06d883d93054&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-night-mixed-nuts.png" alt="夜勤の間食に持ち運びやすい小分けの素焼きミックスナッツ" /><h3>小分けの素焼きミックスナッツ</h3><p>糖質に偏りやすい夜勤中の間食を、ナッツへ置き換える選択肢。無塩・油不使用の小袋なら持ち運びやすく、食べる量も調整しやすいのが魅力です。</p><a class="product-cta" href="https://www.amazon.co.jp/dp/B09DY6SHBV?amp=&amp;crid=347DFK1P4OZ2K&amp;sprefix=%E3%81%99%E3%82%84%E3%81%8D&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=b237d76f17185d763a336c9e881bf37c&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+          </div>
+        </section>
+
+        <section class="favorite-category category-move" id="travelGoods">
+          <header><div><small>旅行・引っ越し</small><h2>応援ナース・転職・引っ越しのお供</h2></div></header>
+          <div class="favorite-grid">
+            <article class="product-card product-card-featured"><img src="./assets/favorite-travel-muji-backpack.png" alt="黒いリュックサックを背負い小旅行へ向かう女性" /><h3>無印良品 肩の負担を軽くする 撥水リュックサック</h3><p>荷重を分散する肩紐で、毎日の通勤から1泊2日の小旅行まで活躍。PC収納やサイドポケットも備えた、デザインと収納力のバランスがよい万能バッグです。</p><a class="product-cta" href="https://www.muji.com/jp/ja/store/cmdty/detail/4550584950551?detail_recommend_01&amp;attributionToken=ChM5NDA5MzcxNDE4OTM1OTE3MjY4EAIaI3JlY29tbWVudC1fb3RoZXJzLXlvdV8xNzI0ODQ2NDI2MjIxIhFyZWxhdGVkLWN2ci1ib29zdCgAOiTY8tEStPHREvfx0RKM8tESsvHREqny0RKP8tES-vHREq3y0RJCDAiS28zSBhDc46qnAw" target="_blank" rel="noopener">無印良品公式を見る <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-travel-power-strip.png" alt="引っ越しや旅行に持ち運べる白いUSB付き電源タップ" /><h3>カシムラ 国内・海外兼用電源タップ</h3><p>AC4口とUSB2ポートを備え、社宅や新居、国内外の旅行で一つあると便利。コードを本体に巻けて、荷物の中でもすっきり持ち運べます。</p><p class="product-note">※変圧器ではありません。海外では接続機器の対応電圧と、渡航先に合う変換プラグをご確認ください。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%82%AB%E3%82%B7%E3%83%A0%E3%83%A9-%E5%9B%BD%E5%86%85%E3%83%BB%E6%B5%B7%E5%A4%96%E4%B8%A1%E7%94%A8%E9%9B%BB%E6%BA%90%E3%82%BF%E3%83%83%E3%83%97-AC4P-USB2P-NWM-6/dp/B0742YSRQS?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;crid=2RJSF4V8VHYYW&amp;dib=eyJ2IjoiMSJ9.cUhdbZidD0V6QlN-Nqn6qEYHdqho88xbi6VLco8uir7w3lJ4QTh0MrnUP0ZSLAmUnOwCWu5mqaNUEGQxG4hBEc8W5T3lMuMwP9DNs2-e-EpCeNWxgyK7jG4U3eGvuKn9Xq_AQi7A7DAmKCQeh_qNvO61jHHoBqKfipHxl2P6BxbUqztUpVBD6bJWZezqhSqzMPDilEt3vhu8TgI0IDLrfQt9F7ZmX-RyIiZ56mft5esrBJsn1e1ruu05DzgIj6fBPYDR7Ou-OKtOg6gGCyL39F_x4prFkCppZwJ5570yprw.k2cxPo0a9OLDDa8R5y0rwBLKitCg1_JVSf588lyvUDU&amp;dib_tag=se&amp;keywords=%E8%9B%B8%E8%B6%B3%E9%85%8D%E7%B7%9A%2B%E3%82%AB%E3%82%B7%E3%83%A0%E3%83%A9&amp;qid=1783836298&amp;sprefix=%E8%9B%B8%E8%B6%B3%E9%85%8D%E7%B7%9A%2B%E3%82%AB%E3%82%B7%E3%83%A0%E3%83%A9%2Caps%2C309&amp;sr=8-1-spons&amp;ufe=app_do%3Aamzn1.fos.bf59e452-7c16-4eb0-8b6f-4f4edb3d8c50&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=4f2cda4f230f926d2df542b8ca5bd2a1&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-travel-sleeping-bag.png" alt="新居で掛け布団とクッションとして使うグレーの寝袋" /><h3>スノーピーク SSシングル</h3><p>寝袋としてはもちろん、広げればブランケットや新居の簡易布団に。収納ケースへ収めればクッションになり、引っ越し直後からキャンプまで柔軟に使えます。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%94%E3%83%BC%E3%82%AF-snow-peak-SS%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB-BD-105GY/dp/B07D8VRDM5?crid=28P8AY1FKZUVN&amp;dib=eyJ2IjoiMSJ9.ggL0KQDDHhGKnVvrUQTAzGgIA_7Z7Q2BTlZ7LLevTT6Qq6Y67eOTJuBJrMqpo3st6FJtUjfEi9K1Bj0a8w7b9npr2nlbDDO5tkz7pjXVQDAgYJbgEzBcTLSVV7vmF5N1Ach2zAUJBrbbPayAycRYQ2tfYEr8MlXwKTjrtgmnFPRZ4_jTFNnU8Wh1ET97aDHQnqkyCyXPN0oJJAWhwmedneoDYahMqVW_CHuwoNpNV79DrV7fgzjWb_WSZJgaKzR40vV83kjyB_VBE0boUeQ0oZb5a54fKQRJULfB5w11wKE.XCIponXQTQ1y_Ne6uFZJB6HAXe4lxf2J9Nm9hNppD3o&amp;dib_tag=se&amp;keywords=%E5%AF%9D%E8%A2%8B+%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%94%E3%83%BC%E3%82%AF&amp;qid=1783836507&amp;sprefix=%E5%AF%9D%E8%A2%8B%E3%80%80%E3%81%99%E3%81%AE%E3%83%BC%2Caps%2C615&amp;sr=8-2&amp;ufe=app_do%3Aamzn1.fos.bf59e452-7c16-4eb0-8b6f-4f4edb3d8c50&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=88f4a0cd472f74d030c262da40b54d81&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+          </div>
+        </section>
+
+        <section class="favorite-category category-study" id="studyGoods">
+          <header><div><small>学び</small><h2>勉強・資格の本とツール</h2></div></header>
+          <div class="favorite-grid">
+            <article class="product-card product-card-featured"><img src="./assets/favorite-study-macbook-air.png" alt="自宅でノートパソコンを使い資料を作成する看護師" /><h3>MacBook Air</h3><p>スマホより広い画面で情報を見比べやすく、勉強、資料作り、副業までできることが大きく広がります。持ち運びやすく、学びと仕事の両方に使える一台です。</p><a class="product-cta" href="https://www.apple.com/jp/macbook-air/" target="_blank" rel="noopener">Apple公式HPを見る <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img class="product-cover-image" src="./assets/favorite-study-travel-nurse-book-cover.png" alt="看護師の新しい働き方！トラベルナース完全ガイドの表紙" /><h3>看護師の新しい働き方！トラベルナース完全ガイド</h3><p>Smart Nurse Lab運営者が、自身の経験をもとに執筆。これから応援ナースを始めたい人が、働き方や準備を具体的にイメージするための実践ガイドです。</p><a class="product-cta" href="https://www.amazon.co.jp/%E7%9C%8B%E8%AD%B7%E5%B8%AB%E3%81%AE%E6%96%B0%E3%81%97%E3%81%84%E5%83%8D%E3%81%8D%E6%96%B9%EF%BC%81%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%83%8A%E3%83%BC%E3%82%B9%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89-%E7%9C%8B%E8%AD%B7%E5%B8%ABn-ebook/dp/B0F9PPWQMW?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;crid=2JNXGCQIJOGER&amp;dib=eyJ2IjoiMSJ9.4SPf3MckvNE94SofeI4fYUOrMCzkHAx1ZncFGBC0W_TGjHj071QN20LucGBJIEps.zy-zFvgFibsx8TM4W52p5kEt_pXDUUJqWe6q7Oa3bJI&amp;dib_tag=se&amp;keywords=%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB+%E3%83%8A%E3%83%BC%E3%82%B9+%E6%9C%AC&amp;qid=1783838799&amp;s=books&amp;sprefix=%E3%83%88%E3%83%A9%E3%83%99%E3%83%AB%E3%83%8A%E3%83%BC%E3%82%B9+%E6%9C%AC%2Cstripbooks%2C482&amp;sr=1-1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=e90d156690f5b68b3099bc3ad5403678&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-study-chatgpt.png" alt="対話型AIを使って学習内容を整理する看護師" /><h3>ChatGPT</h3><p>質問への回答、要約、アイデア整理、資料のたたき台づくりまで、学びと仕事を支える対話型AI。まだ使っていない人も、まずは身近な疑問から試してみて。</p><p class="product-note">※回答には誤りが含まれる場合があります。医療や試験に関わる重要な情報は、必ず一次情報をご確認ください。</p><a class="product-cta" href="https://chatgpt.com/ja-JP/" target="_blank" rel="noopener">ChatGPTを始める <span>↗</span></a></article>
+          </div>
+        </section>
+
+        <section class="favorite-category category-life" id="lifeGoods">
+          <header><div><small>健康・暮らし</small><h2>日々の暮らしと健康を整えるもの</h2></div></header>
+          <div class="favorite-grid">
+            <article class="product-card product-card-featured"><img src="./assets/favorite-life-fluorfloss.png" alt="歯みがき後の習慣としてデンタルフロスを準備する看護師" /><h3>オーラルケア フロアフロス 250m</h3><p>看護の現場で口腔状態の大切さを感じるからこそ、毎日の予防歯科を意識。歯ブラシだけでは落としにくい歯間の汚れを、やさしく絡め取るフロスです。</p><p class="product-note">※使い方や自分に合う歯間清掃具は、歯科医師・歯科衛生士へご相談ください。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%82%AA%E3%83%BC%E3%83%A9%E3%83%AB%E3%82%B1%E3%82%A2-%E3%83%95%E3%83%AD%E3%82%A2%E3%83%95%E3%83%AD%E3%82%B9-250%EF%BD%8D/dp/B078JD4N8C?dib=eyJ2IjoiMSJ9.B-UQ-YltrQ_TktOhcUht_CqllD11Xeno4vJTZVIhMCRBjNpsDCDky7Q7I3jwQ8UbVCrQaqHYj0AFbK-zULVqYSXAR28q9ipLpa39wdH39Zq-1etNEJQ5EHJmQrrRMwLriC3wwRyM9OCKgq_eRMYSdS7iLkwjqbQJLuIFaWxMvHg2NBa4tNZ9bNdkM2lWJeRsc_PwAEtuvRm4kiuDNo0t88vr0kGwF_tmqyXC4cj8d_Y4NID4_162SqEWa47LgdVi2_gAlUQX7dVZS-gY7il4JHMi-oF1zPnZ-DIq-WyaWMI.DhFIPyPYDdQpNoTeaEG9s-ct4mGQzWpa_l_8U4AVb4E&amp;dib_tag=se&amp;keywords=fluorfloss&amp;qid=1783840032&amp;sr=8-8&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=17daab260475ead62a05f32f9ab5e8c1&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-life-cleansui-filter.png" alt="蛇口直結型の浄水器からボトルへ水を注ぐ様子" /><h3>クリンスイ 蛇口直結型浄水器</h3><p>日本の水道水はそのまま飲めますが、味やにおいを整えたい人に便利なコンパクト浄水器。引っ越し先にも持ち運びやすく、ペットボトルの水を買う回数を減らす節約にも。</p><a class="product-cta" href="https://www.amazon.co.jp/%E8%9B%87%E5%8F%A3%E7%9B%B4%E7%B5%90%E5%9E%8B%E3%80%90%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%B4%94%E6%AD%A3%E5%93%81-%E6%97%A5%E6%9C%AC%E8%A3%BD%E3%80%91MONO%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E3%83%A1%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%83%9C%E3%83%87%E3%82%A3-%E3%82%AB%E3%83%BC%E3%83%88%E3%83%AA%E3%83%83%E3%82%B81%E5%80%8B%E4%BB%98%E3%81%8D-MD101-NC/dp/B003AZZS3Q?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;crid=12DH5C2EWTRW2&amp;dib=eyJ2IjoiMSJ9.jCDHPXg14qKsiCmrdPr3ak5VZTlfHdKws6OAbbRluM3M6V8ANok44lcCGyRvZI1_pMvZungfyWRXB6VvLRHxLKjU0tX6at-1HHsLgkhiUNMgSQ1wkUMpO3Bt8yGJQKYoCsfRo1lFSW0RYvN_iZu6xkHRnpPzCqedP2g2ELkR4oCy1MUO0Ts-omfquZRr3GbCHzNLdWHx3wAEEdqjOduUrnansDKBG8XgoLbSf18HTi5_dHtjb60CYKm_6jcuxdpnBlWGXz07qyaHuyFRel7qk1k8oAJ1BtqgFbU5E2moaNc.eCvjt9XQzIfBQL2Ooo0aly1DyfsNM9nbJQYsHyucaww&amp;dib_tag=se&amp;keywords=%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%A4&amp;qid=1783840314&amp;sprefix=%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%B9%E3%82%A4%2Caps%2C477&amp;sr=8-1-spons&amp;ufe=app_do%3Aamzn1.fos.bf59e452-7c16-4eb0-8b6f-4f4edb3d8c50&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=0952ce36f9ada9e04d376ec49d73ff70&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+            <article class="product-card product-card-featured"><img src="./assets/favorite-life-pressure-cooker.png" alt="電気圧力鍋で夕食を用意しながら勉強する看護師" /><h3>アイリスオーヤマ 電気圧力鍋 4.0L</h3><p>炊飯、鍋料理、煮込み、蒸し料理まで一台でこなす時短家電。調理に付ききりになる時間を減らし、勉強や趣味、休息に使える時間を増やします。</p><a class="product-cta" href="https://www.amazon.co.jp/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%A4%E3%83%9E-%E8%87%AA%E5%8B%95%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC90%E7%A8%AE%E9%A1%9E-%E3%83%AC%E3%82%B7%E3%83%94%E3%83%96%E3%83%83%E3%82%AF%E4%BB%98%E3%81%8D-%E6%A5%AD%E7%95%8C%E6%9C%80%E9%AB%98%E5%87%BA%E5%8A%9B1000W-PMPC-MA4-B/dp/B08GSHPC6G?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;crid=5ILJOTKUWZ3C&amp;dib=eyJ2IjoiMSJ9.1h_nk-LoZDIWzlI8LcHw44uEkxA8to826Jii3UGVF3ohv3puEAVoV1X00t2vvMBJw3EHzlpLc7rMQ487Fw3M4_9EBSbywA4ZLd6cIzac8LKSjUA4HWa9owkJdD9IFusgdZZPM_ZC5VZ46X3qWV8NtMWon57O4IoDLzJ94QSvS7hfhlhK2Yx2stb7iuxgjMlIz6hXZc9seFAtydkHR9-BuQCD--LFpXDlyK9MUls67-9tB0MQVQ-JWdXzOyLZwW0dXgUYUaNOVfAmskaUg9NwrcA1lDW_jTQk6_sjT_YaH-Y.fGwVA1cDJy4vXD3YBTv0EiLNINrY2SmnFKahXBIFvI4&amp;dib_tag=se&amp;keywords=%E5%9C%A7%E5%8A%9B%E9%8D%8B&amp;qid=1783840349&amp;sprefix=%E3%81%82%E3%81%A4%E3%82%8A%E3%82%87%E3%81%8F%E3%81%AAb%2Caps%2C521&amp;sr=8-6&amp;ufe=app_do%3Aamzn1.fos.bf59e452-7c16-4eb0-8b6f-4f4edb3d8c50&amp;th=1&amp;linkCode=ll2&amp;tag=smartnurselab-22&amp;linkId=0fb01783ead1ad19bc5cbe29c78a509a&amp;ref_=as_li_ss_tl" target="_blank" rel="sponsored noopener">Amazonで購入 <span>↗</span></a></article>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <footer class="site-footer"><nav class="footer-links" aria-label="サイト情報"><a href="./about.html">運営者情報</a><a href="./contact.html">お問い合わせ</a><a href="./privacy-policy.html">プライバシーポリシー・免責事項</a></nav><p>2026 Copyright Smart Nurse Lab All Rights Reserved.</p></footer>
+    <script src="./script.js?v=20260708-search-1"></script>
+  </body>
+</html>
