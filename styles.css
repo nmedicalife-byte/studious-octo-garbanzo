@@ -2866,6 +2866,19 @@ input {
   text-underline-offset: 3px;
 }
 
+.article-content .article-related-link {
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.article-content .article-related-link:hover,
+.article-content .article-related-link:focus-visible {
+  color: var(--primary);
+}
+
 .career-stat-bars {
   display: grid;
   gap: 12px;
