@@ -3810,6 +3810,52 @@ input {
   color: var(--muted);
 }
 
+.money-time-balances {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+}
+
+.money-time-balances > div {
+  position: relative;
+  min-height: 190px;
+  padding: 22px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f3fbfa);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(9, 88, 92, 0.07);
+}
+
+.money-time-balances > div:nth-child(2) {
+  background: linear-gradient(145deg, #ffffff, #f3f8ff);
+}
+
+.money-time-balances > div:nth-child(3) {
+  background: linear-gradient(145deg, #ffffff, #fff9ef);
+}
+
+.money-time-balances span {
+  display: block;
+  color: rgba(9, 88, 92, 0.32);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.money-time-balances strong {
+  display: block;
+  margin: 18px 0 8px;
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+.money-time-balances p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .fit-compare {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4715,6 +4761,7 @@ input {
   .relationship-map,
   .community-rings,
   .decision-checklist,
+  .money-time-balances,
   .fit-compare,
   .career-job-grid,
   .merit-caution-grid,
