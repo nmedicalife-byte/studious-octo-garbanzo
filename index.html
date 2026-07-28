@@ -17,40 +17,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Smart Nurse Labは、看護師の働き方、勉強、転職、夜勤、暮らしに役立つ情報を届ける看護師向けブログメディアです。"
+      content="Smart Nurse Labの記事一覧ページです。看護師の働き方、勉強・資格、転職、健康、お金、暮らしの記事を新着順に探せます。"
     />
-    <title>Smart Nurse Lab | 看護師のための情報ブログ</title>
-    <link rel="stylesheet" href="./styles.css?v=20260723-1" />
-    <link rel="canonical" href="https://www.smartnurselab.com/" />
+    <title>記事一覧 | Smart Nurse Lab</title>
+    <link rel="stylesheet" href="../styles.css?v=20260716-1" />
+    <link rel="canonical" href="https://www.smartnurselab.com/articles/" />
 </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="logo" href="#" aria-label="Smart Nurse Lab">
+      <a class="logo" href="../" aria-label="Smart Nurse Lab">
         <span class="logo-mark" aria-hidden="true">
           <span class="logo-cross"></span>
           <span class="logo-pulse"></span>
           <span class="logo-dot logo-dot-a"></span>
           <span class="logo-dot logo-dot-b"></span>
         </span>
-        <span>
-          <strong>Smart Nurse Lab</strong>
-        </span>
+        <span><strong>Smart Nurse Lab</strong></span>
       </a>
       <div class="header-actions">
-        <a class="header-favorites" href="./favorite-things.html" aria-label="おすすめアイテムを見る">
-          <span class="favorites-icon" aria-hidden="true"></span>
-          <span class="favorites-text">ITEMS</span>
-        </a>
         <button class="header-search" type="button" aria-expanded="false" aria-controls="headerSearchPanel" aria-label="検索パネルを開く">
           <span class="search-icon" aria-hidden="true"></span>
         </button>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="drawer" aria-label="メニューを開く">
-          <span class="menu-icon" aria-hidden="true">
-            <span></span>
-            <span></span>
-          </span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
           <span class="menu-text">MENU</span>
         </button>
       </div>
@@ -59,13 +50,12 @@
     <form class="header-search-panel" id="headerSearchPanel" role="search" aria-hidden="true" data-search-form>
       <label for="headerArticleSearch">記事を検索</label>
       <div class="search-row">
-        <input id="headerArticleSearch" type="search" placeholder="例: スクラブ、夜勤、転職、勉強" data-search-input />
+        <input id="headerArticleSearch" type="search" placeholder="例: スクラブ、資格、夜勤、転職" data-search-input />
         <button type="submit">検索</button>
       </div>
       <div class="keywords" aria-label="人気キーワード">
         <button type="button" data-keyword="スクラブ">スクラブ</button>
-        <button type="button" data-keyword="健康">健康</button>
-        <button type="button" data-keyword="給与">給与</button>
+        <button type="button" data-keyword="資格">資格</button>
         <button type="button" data-keyword="夜勤">夜勤</button>
         <button type="button" data-keyword="転職">転職</button>
       </div>
@@ -77,75 +67,426 @@
         <strong>記事カテゴリ</strong>
       </div>
       <nav class="drawer-nav" aria-label="カテゴリメニュー">
-        <a href="./articles/#work">
-          <span class="drawer-link-ja">働き方</span>
-          <span class="drawer-link-en">work style</span>
-        </a>
-        <a href="./articles/#study">
-          <span class="drawer-link-ja">勉強・資格</span>
-          <span class="drawer-link-en">study</span>
-        </a>
-        <a href="./articles/#career">
-          <span class="drawer-link-ja">転職</span>
-          <span class="drawer-link-en">career</span>
-        </a>
-        <a href="./articles/#health">
-          <span class="drawer-link-ja">健康</span>
-          <span class="drawer-link-en">health</span>
-        </a>
-        <a href="./articles/#money">
-          <span class="drawer-link-ja">給与</span>
-          <span class="drawer-link-en">salary</span>
-        </a>
-        <a href="./articles/#life">
-          <span class="drawer-link-ja">ライフスタイル</span>
-          <span class="drawer-link-en">lifestyle</span>
-        </a>
-        <a href="./favorite-things.html">
-          <span class="drawer-link-ja">おすすめアイテム</span>
-          <span class="drawer-link-en">favorite things</span>
-        </a>
+        <a href="#work"><span class="drawer-link-ja">働き方</span><span class="drawer-link-en">work style</span></a>
+        <a href="#study"><span class="drawer-link-ja">勉強・資格</span><span class="drawer-link-en">study</span></a>
+        <a href="#career"><span class="drawer-link-ja">転職</span><span class="drawer-link-en">career</span></a>
+        <a href="#health"><span class="drawer-link-ja">健康</span><span class="drawer-link-en">health</span></a>
+        <a href="#money"><span class="drawer-link-ja">給与</span><span class="drawer-link-en">salary</span></a>
+        <a href="#life"><span class="drawer-link-ja">ライフスタイル</span><span class="drawer-link-en">lifestyle</span></a>
       </nav>
     </aside>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">For nurses, by clear thinking</p>
-          <h1><span>看護師が賢く学び、</span><span>豊かに生きるために。</span></h1>
-          <p>
-            職場での悩みから、転職・キャリア、日々のライフスタイルまで。Smart Nurse Labは、看護師が自分らしく働き、暮らすために必要な情報を届けるブログメディアです。
-          </p>
-        </div>
-
-        <div class="hero-feature-stack">
-          <a class="hero-card" href="./articles/nurse-salary-guide.html" data-title="看護師 給料 給与 年収 手当 明細 夜勤 転職" data-category="給与">
-            <img src="./assets/photo-money.jpg" alt="給与明細の手当と控除を確認する看護師" />
-            <div>
-              <span>注目</span>
-              <h2 class="salary-card-title"><span>看護師の平均年収はいくら？</span><span>給与の決まり方と上げ方</span></h2>
-              <p>給与明細から自分の収入を見直す入門ガイド。</p>
-            </div>
-          </a>
-          <a class="hero-items-card" href="./favorite-things.html" aria-label="Smart Nurse Labのおすすめアイテムを見る">
-            <img src="./assets/favorite-things-hero-tokyo.png" alt="Smart Nurse Labのおすすめアイテムを紹介する看護師" />
-            <div>
-              <span>Favorite things</span>
-              <strong>看護師の仕事と暮らしを助ける、おすすめアイテム</strong>
-              <small>ナースグッズ・夜勤・学び・暮らしから探す <b aria-hidden="true">→</b></small>
-            </div>
-          </a>
+      <section class="article-index-hero">
+        <a class="back-link" href="../">Smart Nurse Lab</a>
+        <p class="eyebrow">All posts</p>
+        <h1>記事一覧</h1>
+        <p>新着順に、Smart Nurse Labの記事をまとめています。気になるテーマから、今の自分に必要な記事を探してみてください。</p>
+        <div class="article-index-filters" aria-label="カテゴリ">
+          <a href="#all" data-filter="all" aria-current="true">すべて</a>
+          <a href="#work" data-filter="work">働き方</a>
+          <a href="#study" data-filter="study">勉強・資格</a>
+          <a href="#career" data-filter="career">転職</a>
+          <a href="#health" data-filter="health">健康</a>
+          <a href="#money" data-filter="money">給与</a>
+          <a href="#life" data-filter="life">ライフスタイル</a>
         </div>
       </section>
 
-      <section class="section" id="must-read">
-        <div class="section-heading">
-          <p>Start here</p>
-          <h2>はじめに読みたい記事</h2>
-        </div>
-        <div class="card-grid article-grid">
-          <a class="article-card" href="./articles/nurse-career-places.html" data-title="看護師 資格 働ける場所 病院以外 転職 キャリア" data-category="転職">
-            <img src="./assets/photo-career.jpg" alt="看護師資格で選べる職場を考えるイメージ" />
+      <section class="section article-index-section" id="all">
+        <div class="card-grid article-grid article-index-grid">
+          <a class="article-card" id="life" href="./nurse-retirement-gift-choice.html" data-title="看護師 退職 同僚 プレゼント 贈り物 予算 関係性 思い出 メッセージ クッキー ヴィーガン ライフスタイル" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-nurse-retirement-gift-hero.png" alt="退職する同僚看護師へ小さなプレゼントとメッセージカードを渡す看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>退職する同僚看護師へ何を贈る？</h3>
+              <p>関係性と予算で考えるプレゼントの選び方</p>
+              <time datetime="2026-07-28">2026.7.28</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="work" href="./nurse-side-job-life-design.html" data-title="看護師 副業 ダブルワーク 目的 目標額 収入 スキル 経験 睡眠 休息 暮らし 働き方" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-side-job-payslips-hero.png" alt="自宅で本業と副業の2枚の給与明細を見比べる看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>休日を仕事で埋める前に。</h3>
+              <p>看護師が暮らしを豊かにする副業の選び方</p>
+              <time datetime="2026-07-27">2026.7.27</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="career" href="./nurse-direct-scout-job-change.html" data-title="看護師 転職 スカウト 引き抜き ヘッドハント 直接応募 友人紹介 労働条件通知書 雇用契約書 確認メール 録音" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-nurse-direct-scout-hero.png" alt="医療施設のラウンジで名刺を差し出され、転職のスカウトを受ける看護師" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>転職エージェントを通さない看護師転職の注意点</h3>
+              <p>スカウト・引き抜きで後悔しないために</p>
+              <time datetime="2026-07-26">2026.7.26</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-moving-cost-housing.html" data-title="看護師 転職 応援ナース 引っ越し 引越し 初期費用 家具家電 寮 借り上げ寮 一般賃貸 マンスリー 通勤時間 サブスくらし goodroom residence ライフスタイル" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-nurse-moving-rental-hero.png" alt="新しい賃貸室へ段ボール箱とスーツケースを運び込む看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>初期費用を抑えて引っ越したい。</h3>
+              <p>転職・応援ナースの住まい選び</p>
+              <time datetime="2026-07-25">2026.7.25</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="health" href="./nurse-break-meal-alertness.html" data-title="看護師 休憩ごはん 昼休憩 お菓子 菓子パン カップ麺 眠気 集中力 血糖 夜勤 間食 カフェイン 健康" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-nurse-break-meal-hero.png" alt="病院のスタッフ休憩室で昼食を囲む4人の看護師" />
+            <div class="article-body">
+              <span class="tag">健康</span>
+              <h3>忙しい看護師ほど見直したい。</h3>
+              <p>眠気と集中力に配慮した休憩ごはん</p>
+              <time datetime="2026-07-23">2026.7.23</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-digital-business-card-prairie.html" data-title="看護師 デジタル名刺 Prairie Card プレーリーカード 応援ナース 外部研修 学会 自己紹介 NFC QR 個人情報 ライフスタイル" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-prairie-card-nurse-hero.png" alt="病院のスタッフエリアで看護師がデジタル名刺を提示し、同僚がスマートフォンで読み取る様子" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師がデジタル名刺を持つメリットは？</h3>
+              <p>Prairie Cardの活用場面と注意点</p>
+              <time datetime="2026-07-18">2026.7.18</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-creator-america.html" data-title="看護師 ナースクリエイター アメリカ 米国 SNS インフルエンサー コンテンツクリエイター 副業 収益 広告 UGC プライバシー 働き方" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-creator-america-hero.png" alt="自宅の撮影環境でスマートフォンに向かって発信するアメリカの看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>看護師がSNSで働く時代？</h3>
+              <p>アメリカの「ナースクリエイター」という選択肢</p>
+              <time datetime="2026-07-18">2026.7.18</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="study" href="./midline-catheter-future.html" data-title="看護師 ミッドラインカテーテル ミッドライン PICC 末梢静脈 上腕 超音波 血管アクセス 合併症 普及 診療報酬" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-midline-catheter-future-hero.png" alt="超音波で血管を確認しながら患者の上腕にカテーテルを挿入する看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>ミッドラインカテーテルは今後広がる？</h3>
+              <p>国内導入の動きと看護師が知っておきたいこと</p>
+              <time datetime="2026-07-16">2026.7.16</time>
+            </div>
+          </a>
+
+          <a class="article-card" id="money" href="./nurse-money-time-balance.html" data-title="看護師 お金 時間 夜勤 単発バイト 副業 給与 手取り 税金 健康 休息 学び 自己投資 若い 未来 ワークライフバランス" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-nurse-money-time-hero.png" alt="お金と時間を載せた天秤を前に考える看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>働く時間を増やす？学ぶ時間をつくる？</h3>
+              <p>看護師のお金と時間の話</p>
+              <time datetime="2026-07-16">2026.7.16</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./american-travel-nurse-salary.html" data-title="アメリカ 米国 トラベルナース 給与 週給 年収 コロナ 為替 物価 購買力平価 PPP 応援ナース 比較 住居費 税金 保険" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-american-travel-nurse-salary-hero.png" alt="アメリカの病院で患者情報を確認しながら働く外国人看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>アメリカのトラベルナースはいくら稼ぐ？</h3>
+              <p>日本の応援ナースと比較</p>
+              <time datetime="2026-07-15">2026.7.15</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-medical-ict.html" data-title="看護師 医療用ICT 医療ICT 情報通信技術 遠隔医療 離島 遠隔死亡診断 遠隔画像診断 電子カルテ テレナーシング 医療DX 勉強 資格" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-nurse-medical-ict-hero.png" alt="離島の診療所でタブレットを使い、遠方の医師と連携する看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師に医療用ICTはどう関係する？</h3>
+              <p>身近な活用例とこれからの働き方</p>
+              <time datetime="2026-07-15">2026.7.15</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-credit-card-review.html" data-title="看護師 クレジットカード クレカ おすすめ 選び方 見直し 枚数 年会費 ポイント 入会特典 アフィリエイト 広告 リボ払い タッチ決済 ライフスタイル" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-nurse-credit-card-review-hero.png" alt="病院内の売店でクレジットカードのタッチ決済をする看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師に合うクレジットカードは？</h3>
+              <p>新しく作る前に見直したいこと</p>
+              <time datetime="2026-07-15">2026.7.15</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-robot-2040.html" data-title="2040年 医療 介護 ロボット 看護師 仕事 AI 人型ロボット フィジカルAI 1000万台 Noetra 対人スキル 機器操作 人手不足 働き方" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-robot-2040-hero.png" alt="日本の病院で物品を運ぶ人型ロボットと一緒に働く看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>2040年、日本の医療・介護現場にロボットは増える？</h3>
+              <p>看護師の仕事はどう変わるのか</p>
+              <time datetime="2026-07-14">2026.7.14</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-oneoff-outsourcing-income.html" data-title="看護師 単発バイト 業務委託 生計 自由な働き方 個人事業主 社会保険 健康保険 国民健康保険 国民年金 確定申告 開業届 青色申告 ツアーナース プライベートナース" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-oneoff-outsourcing-income-hero.png" alt="単発バイトと業務委託の予定を整理する看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>看護師が単発バイトと業務委託で生計を立てるには？</h3>
+              <p>自由な働き方の現実</p>
+              <time datetime="2026-07-08">2026.7.8</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./travel-nurse-job-history.html" data-title="応援ナース 職歴 転職回数 不利 契約満了 短期離職 履歴書 職務経歴書 面接 看護師需要 SNS 個人ブログ トラベルナース キャリア" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-travel-nurse-job-history-hero.png" alt="病院の前でスーツケースと書類を持ち、次の職場へ向かう応援ナース" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>応援ナースで増えた職歴は不利になる？</h3>
+              <p>SNS等の不安を煽る情報に流されず、看護師需要から冷静に考える</p>
+              <time datetime="2026-07-08">2026.7.8</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-bachelor-transfer-salary.html" data-title="専門卒 看護師 学士 大学編入 看護学士 給料 給与差 学費 回収 シミュレーション 転職 海外 キャリアアップ" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-nurse-bachelor-transfer-salary-hero.png" alt="大学校舎の前で学士取得について考える看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>専門卒看護師が学士を取るメリットは？</h3>
+              <p>学費・給与差・キャリアで考える</p>
+              <time datetime="2026-07-07">2026.7.7</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-health-signs.html" data-title="看護師 病気 体調不良 腰痛 ヘルニア 腰部脊柱管狭窄症 不眠 睡眠障害 うつ メンタル 肥満 体重増加 体重減少 手荒れ 皮膚炎 接触皮膚炎 手湿疹 夜勤 立ち仕事 受診 休み方 健康管理" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-nurse-health-signs-hero.png" alt="病室のベッドサイドで腰の不調に気づく看護師" />
+            <div class="article-body">
+              <span class="tag">健康</span>
+              <h3>看護師が気をつけたい病気と体調不良</h3>
+              <p>見逃したくない不調サインと対処法</p>
+              <time datetime="2026-07-07">2026.7.7</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-workplace-relationships.html" data-title="看護師 人間関係 職場 つらい お局 先輩 師長 パワハラ いじめ メンタル 辞めたい 転職 相談 記録 心を守る" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-nurse-workplace-relationships-hero.png" alt="職場の人間関係に悩み、休憩室で気持ちを整える看護師" />
+            <div class="article-body">
+              <span class="tag">健康</span>
+              <h3>看護師の職場の人間関係がつらいとき</h3>
+              <p>心を守る考え方と対処法</p>
+              <time datetime="2026-07-06">2026.7.6</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-career-change-outside.html" data-title="看護師 看護師以外 仕事 転職 異業種転職 一般企業 病院以外 資格 キャリアチェンジ 退職 リモート AI 給料 夜勤 人間関係" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-nurse-career-change-outside-hero.png" alt="ナース服や聴診器を前に看護師以外の仕事への転職を考える看護師" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>看護師以外の仕事に転職するには？</h3>
+              <p>資格を活かす道と異業種転職の考え方</p>
+              <time datetime="2026-07-06">2026.7.6</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-overseas-study.html" data-title="看護師 海外 留学 海外留学 英語 語学留学 ワーホリ 海外看護師 資格 ビザ 国際看護 キャリア IELTS TOEFL OET お金 退職" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-nurse-overseas-study-hero.png" alt="空港でフライトチケットを持ち海外留学へ向かう看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師が海外留学で後悔しないために</h3>
+              <p>目的別の選び方と準備しておきたいこと</p>
+              <time datetime="2026-07-06">2026.7.6</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-bonus-use.html" data-title="看護師 ボーナス 使い道 割合 貯金 生活防衛費 奨学金 返済 自己投資 ご褒美 夜勤 ストレス消費 両学長 リベラルアーツ大学" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-nurse-bonus-use-hero.png" alt="ボーナスの入金を見て喜ぶ看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>看護師のボーナスの使い道</h3>
+              <p>後悔しないための割合と分け方</p>
+              <time datetime="2026-07-04">2026.7.4</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-shortage-2025.html" data-title="看護師不足 2025年問題 国の対策 自治体 ナースセンター 需給推計 高齢化 訪問看護 介護施設 海外 WHO" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-nurse-shortage-hero.png" alt="病院の勤務表を見ながら看護師不足について考える看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>看護師不足はこれからどうなる？</h3>
+              <p>データで見る現場の深刻さと国の対策</p>
+              <time datetime="2026-07-04">2026.7.4</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-resume-writing.html" data-title="看護師 転職 履歴書 書き方 志望動機 職歴 本人希望欄 免許 資格 ブランク 短期離職 応援ナース AI添削" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-nurse-resume-writing-hero.png" alt="自宅の机で転職用の履歴書を書く看護師" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>転職する看護師の履歴書の書き方</h3>
+              <p>志望動機・職歴・本人希望欄を解説</p>
+              <time datetime="2026-07-04">2026.7.4</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./night-shift-health-risk.html" data-title="夜勤 交代勤務 看護師 健康リスク 睡眠 不眠 ストレス 体内時計 カフェイン 仮眠 休憩 組織対策 介護施設 オンコール" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-night-shift-health-risk-hero.png" alt="夜勤中のナースステーションで記録を確認する看護師" />
+            <div class="article-body">
+              <span class="tag">健康</span>
+              <h3>夜勤で心と体がつらい看護師へ</h3>
+              <p>不眠・ストレス・健康リスクから自分を守る</p>
+              <time datetime="2026-07-04">2026.7.4</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./remote-island-nursing.html" data-title="離島看護 離島 看護師 応援ナース 地域医療 へき地医療 仕事内容 向き不向き 給与 住まい 赴任費 生活 搬送 オンコール" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-remote-island-nursing-hero.png" alt="海の見える離島の小さな診療所の近くに立つ看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>離島看護に興味がある看護師へ</h3>
+              <p>仕事内容・向き不向き・応募前に知っておきたいこと</p>
+              <time datetime="2026-07-01">2026.7.1</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./foreign-nursing-assistant-work.html" data-title="外国人 看護補助者 特定技能 技能実習 留学生 アルバイト 介護 外国人労働者 医療 福祉 看護師 業務範囲" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-foreign-nursing-assistant-hero.png" alt="日本人看護師と東南アジア出身の看護補助者が一緒にケア用品を確認している" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>外国人の看護補助者とどう働く？</h3>
+              <p>制度と現場で知っておきたいこと</p>
+              <time datetime="2026-06-30">2026.6.30</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nursing-association-guide.html" data-title="看護協会 日本看護協会 入会 会費 研修 資格 保険 看護職賠償責任保険 図書館 キャリナース 強制加入 任意加入" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-nursing-association-hero.png" alt="パンフレットを読みながら看護協会について調べる看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護協会って何をしている団体？</h3>
+              <p>入会前に知っておきたい役割・メリット・保険・会費の考え方</p>
+              <time datetime="2026-06-30">2026.6.30</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-author-books.html" data-title="看護師 本 読書 おすすめ 働き方 メンタル 暮らし キャリア 看護観 トラベルナース 転職 夜勤 レシピ ミニマリズム" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-nurse-books-hero.png" alt="本とノートを広げて読書する看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師が書いた本から学ぶ</h3>
+              <p>働き方・メンタル・暮らしを整える10冊</p>
+              <time datetime="2026-06-29">2026.6.29</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-scrub-choice.html" data-title="看護師 スクラブ 選び方 動きやすい 洗いやすい 清潔感 サイズ ポケット 透け 汗じみ 身だしなみ" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-nurse-scrub-choice.png" alt="複数のスクラブを見比べて選ぶ看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師のスクラブの選び方</h3>
+              <p>動きやすさ・洗いやすさ・清潔感で見るポイント</p>
+              <time datetime="2026-06-29">2026.6.29</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-career-agency-fee.html" data-title="看護師 転職サイト 無料 有料職業紹介 紹介手数料 ナースパワー マイナビ 看護roo レバウェル eナースセンター ハローワーク 直接応募" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-nurse-career-agency-fee.png" alt="転職サービスの担当者とオンライン面談する看護師" />
+            <div class="article-body">
+              <span class="tag">転職</span>
+              <h3>看護師の転職サイトはなぜ無料？</h3>
+              <p>有料職業紹介の仕組みと、紹介手数料が現場に与える影響</p>
+              <time datetime="2026-06-29">2026.6.29</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./visit-nursing-workstyle.html" data-title="訪問看護 看護師 仕事内容 向き不向き 転職 ステーション SNS 求人 直接応募 地域連携 オンコール" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-visit-nursing-hero.png" alt="自転車で居宅へ訪問する訪問看護師" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>訪問看護に興味がある看護師へ</h3>
+              <p>仕事内容と向き不向き、転職前に知っておきたいこと</p>
+              <time datetime="2026-06-26">2026.6.26</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-money-spending.html" data-title="看護師 お金 使いすぎ 貯金 生活水準 夜勤手当 ストレス消費 給与 若手" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-nurse-money-spending.png" alt="買い物袋を持って帰る若手看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>看護師はお金を使いすぎ？</h3>
+              <p>収入が高く見える理由と、生活水準が上がりやすい落とし穴</p>
+              <time datetime="2026-06-26">2026.6.26</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-incident-mental-care.html" data-title="看護師 インシデント ヒヤリハット ミス メンタル セカンドビクティム 医療安全 相談" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-nurse-incident-mental-care.png" alt="インシデント後に落ち込んでいる看護師" />
+            <div class="article-body">
+              <span class="tag">健康</span>
+              <h3>ミスをした看護師が自分を責め続けないために</h3>
+              <p>インシデント後の向き合い方</p>
+              <time datetime="2026-06-26">2026.6.26</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-income-up-priority.html" data-title="看護師 収入アップ 給与 転職 副業 資格 優先順位" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-nurse-income-priority.png" alt="転職活動に向かう看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>看護師が収入を上げるなら何から始める？</h3>
+              <p>転職・副業・資格の優先順位</p>
+              <time datetime="2026-06-26">2026.6.26</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-medical-fee-guide.html" data-title="看護師 診療報酬 2026 改定 DPC 入院日数 看護必要度 給与 賃上げ" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-nurse-medical-fee.png" alt="診療報酬に関する資料を読みながら学ぶ看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師も知っておきたい診療報酬</h3>
+              <p>全部ではなく、まず見るべきところ</p>
+              <time datetime="2026-06-24">2026.6.24</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-generative-ai-guide.html" data-title="看護師 生成AI ChatGPT 患者情報 個人情報 創傷写真 勉強 安全" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-nurse-generative-ai.png" alt="生成AIを使いながらノートで勉強する看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師は生成AIをどう使う？</h3>
+              <p>仕事と勉強に生かす方法、入力してはいけない情報</p>
+              <time datetime="2026-06-24">2026.6.24</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./travel-nurse-workstyle.html" data-title="応援ナース トラベルナース 高収入 雇用形態 契約 給与 寮 働き方" data-category="働き方" data-index-category="work">
+            <img src="../assets/photo-travel-nurse-hero.jpg" alt="応援ナースの契約書サンプル" />
+            <div class="article-body">
+              <span class="tag">働き方</span>
+              <h3>応援ナースという働き方を選ぶ前に</h3>
+              <p>高収入の理由と、働き方の仕組みを知る</p>
+              <time datetime="2026-06-23">2026.6.23</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-certification-before-study.html" data-title="看護師 資格 勉強 BLS ACLS 認定看護師 専門看護師 NP キャリア お金 時間" data-category="勉強・資格" data-index-category="study">
+            <img src="../assets/photo-study.jpg" alt="仕事後に机で資格勉強をする看護師" />
+            <div class="article-body">
+              <span class="tag">勉強・資格</span>
+              <h3>看護師が資格を取る前に考えたいこと</h3>
+              <p>時間・お金・キャリアの整え方</p>
+              <time datetime="2026-06-23">2026.6.23</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-minimalist-mindset.html" data-title="看護師 ミニマリスト 思考 暮らし バッグ ナースグッズ お金 時間 夜勤" data-category="ライフスタイル" data-index-category="life">
+            <img src="../assets/photo-minimalism-hero.png" alt="出勤前にバッグへ荷物を入れる看護師" />
+            <div class="article-body">
+              <span class="tag">ライフスタイル</span>
+              <h3>看護師とミニマリスト思考</h3>
+              <p>モノ・お金・時間を整えて身軽に働く</p>
+              <time datetime="2026-06-22">2026.6.22</time>
+            </div>
+          </a>
+
+          <a class="article-card" href="./nurse-career-places.html" data-title="看護師 資格 働ける場所 病院以外 転職 キャリア" data-category="転職" data-index-category="career">
+            <img src="../assets/photo-career.jpg" alt="看護師資格で選べる職場を考えるイメージ" />
             <div class="article-body">
               <span class="tag">転職</span>
               <h3>看護師資格で働ける場所はいくつある？</h3>
@@ -153,8 +494,9 @@
               <time datetime="2026-06-21">2026.6.21</time>
             </div>
           </a>
-          <a class="article-card" href="./articles/night-shift-recovery.html" data-title="夜勤前 夜勤明け 過ごし方 睡眠 食事 予定 休み方" data-category="健康">
-            <img src="./assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
+
+          <a class="article-card" href="./night-shift-recovery.html" data-title="夜勤前 夜勤明け 過ごし方 睡眠 食事 予定 休み方" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-night.jpg" alt="夜勤明けに眠れない日の休息イメージ" />
             <div class="article-body">
               <span class="tag">健康</span>
               <h3>夜勤前・夜勤明けの過ごし方の最適解</h3>
@@ -162,8 +504,9 @@
               <time datetime="2026-06-21">2026.6.21</time>
             </div>
           </a>
-          <a class="article-card" href="./articles/nurse-mental-limit.html" data-title="看護師 辞めたい 限界 メンタル 心 守る 人間関係" data-category="健康">
-            <img src="./assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
+
+          <a class="article-card" href="./nurse-mental-limit.html" data-title="看護師 辞めたい 限界 メンタル 心 守る 人間関係" data-category="健康" data-index-category="health">
+            <img src="../assets/photo-team.jpg" alt="仕事の悩みを相談する看護師" />
             <div class="article-body">
               <span class="tag">健康</span>
               <h3>看護師を辞めたいと思ったら</h3>
@@ -171,71 +514,30 @@
               <time datetime="2026-06-21">2026.6.21</time>
             </div>
           </a>
-        </div>
-      </section>
 
-      <section class="section section-soft" id="latest">
-        <div class="section-heading">
-          <p>New posts</p>
-          <h2>新着記事</h2>
-        </div>
-        <div class="featured-list">
-          <a class="wide-card" href="./articles/nurse-side-job-life-design.html" data-title="看護師 副業 ダブルワーク 目的 目標額 収入 スキル 経験 睡眠 休息 暮らし 働き方" data-category="働き方">
-            <img src="./assets/photo-nurse-side-job-payslips-hero.png" alt="自宅で本業と副業の2枚の給与明細を見比べる看護師" />
-            <div>
-              <span class="tag">働き方</span>
-              <h3>休日を仕事で埋める前に。</h3>
-              <p>看護師が暮らしを豊かにする副業の選び方</p>
+          <a class="article-card" href="./nurse-salary-guide.html" data-title="看護師 給料 給与 年収 手当 明細 夜勤 転職" data-category="給与" data-index-category="money">
+            <img src="../assets/photo-money.jpg" alt="給与明細の手当と控除を確認する看護師" />
+            <div class="article-body">
+              <span class="tag">給与</span>
+              <h3>看護師の平均年収はいくら？</h3>
+              <p>給与の決まり方と上げ方</p>
+              <time datetime="2026-06-21">2026.6.21</time>
             </div>
           </a>
-          <a class="wide-card" href="./articles/nurse-direct-scout-job-change.html" data-title="看護師 転職 スカウト 引き抜き ヘッドハント 直接応募 友人紹介 労働条件通知書 雇用契約書 記録" data-category="転職">
-            <img src="./assets/photo-nurse-direct-scout-hero.png" alt="医療施設のラウンジで名刺を差し出され、転職のスカウトを受ける看護師" />
-            <div>
-              <span class="tag">転職</span>
-              <h3>転職エージェントを通さない看護師転職の注意点</h3>
-              <p>スカウト・引き抜きで後悔しないために</p>
-            </div>
-          </a>
-          <a class="wide-card" href="./articles/nurse-moving-cost-housing.html" data-title="看護師 転職 応援ナース 引っ越し 初期費用 家具家電 寮 一般賃貸 マンスリー 通勤時間 サブスくらし ライフスタイル" data-category="ライフスタイル">
-            <img src="./assets/photo-nurse-moving-rental-hero.png" alt="新しい賃貸室へ段ボール箱とスーツケースを運び込む看護師" />
-            <div>
-              <span class="tag">ライフスタイル</span>
-              <h3>初期費用を抑えて引っ越したい。</h3>
-              <p>転職・応援ナースの住まい選び</p>
-            </div>
-          </a>
-        </div>
-        <div class="section-action">
-          <a href="./articles/">すべての記事を見る</a>
+
         </div>
       </section>
-
-      <section class="section" id="categories">
-        <div class="section-heading">
-          <p>Category search</p>
-          <h2>何から探す？</h2>
-        </div>
-        <div class="category-grid">
-          <a href="./articles/#work"><img src="./assets/icon-ward.svg" alt="" /><span>働き方</span></a>
-          <a href="./articles/#study"><img src="./assets/icon-study.svg" alt="" /><span>勉強・資格</span></a>
-          <a href="./articles/#career"><img src="./assets/icon-career.svg" alt="" /><span>転職</span></a>
-          <a href="./articles/#health"><img src="./assets/icon-mental.svg" alt="" /><span>健康</span></a>
-          <a href="./articles/#money"><img src="./assets/icon-money.svg" alt="" /><span>給与</span></a>
-          <a href="./articles/#life"><img src="./assets/icon-life.svg" alt="" /><span>ライフスタイル</span></a>
-        </div>
-      </section>
-
     </main>
 
     <footer class="site-footer">
       <nav class="footer-links" aria-label="サイト情報">
-        <a href="./about.html">運営者情報</a>
-        <a href="./contact.html">お問い合わせ</a>
-        <a href="./privacy-policy.html">プライバシーポリシー・免責事項</a>
+        <a href="../about.html">運営者情報</a>
+        <a href="../contact.html">お問い合わせ</a>
+        <a href="../privacy-policy.html">プライバシーポリシー・免責事項</a>
       </nav>
       <p>2026 Copyright Smart Nurse Lab All Rights Reserved.</p>
     </footer>
 
-    <script src="./script.js?v=20260708-search-1"></script>
+    <script src="../script.js?v=20260708-search-1"></script>
   </body>
 </html>
